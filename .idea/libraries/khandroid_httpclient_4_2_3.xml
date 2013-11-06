@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="khandroid-httpclient-4.2.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/khandroid-httpclient-4.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/PayPalAndroidSDK.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/volley.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

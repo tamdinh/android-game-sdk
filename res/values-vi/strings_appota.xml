@@ -1,0 +1,118 @@
+<resources>
+
+    <string name="com_appota_lang_vn">Tiếng Việt</string>
+    <string name="com_appota_lang_en">English (U.S)</string>
+    <string name="com_appota_lang_id">Indonesia</string>
+    <string name="com_appota_lang_ma">Malaysia</string>
+    <string name="com_appota_loading">Đang tải...</string>
+    <string name="com_appota_retry">Thử lại</string>
+    <string name="com_appota_send_format">Gửi %1$s (%2$d đ/tin)</string>
+    <string name="com_appota_price_format">%1$s VND -> %2$d</string>
+    <string name="com_appota_details">Chi tiết</string>
+    <string name="com_appota_payment_error">Có lỗi xảy ra, vui lòng thử lại</string>
+    <string name="com_appota_wait_payment">Đang chờ kết quả giao dịch...</string>
+    <string name="com_appota_sms_syntax">Cấu trúc SMS</string>
+    <string name="com_appota_info">Thông tin</string>
+    <string name="com_appota_select_vendor">Chọn nhà mạng</string>
+    <string name="com_appota_card_serial">Số sê-ri thẻ</string>
+    <string name="com_appota_card_code">Mã nạp tiền</string>
+    <string name="com_appota_input_card_serial">Nhập số sê-ri thẻ</string>
+    <string name="com_appota_input_card_code">Nhập mã nạp tiền</string>
+    <string name="com_appota_pay">Thanh toán</string>
+    <string name="com_appota_payment">Thanh toán</string>
+    <string name="com_appota_confirm_card">Bạn có chắc muốn nạp?</string>
+    <string name="com_appota_congrats">Chúc mừng</string>
+    <string name="com_appota_pay_success">Giao dịch thành công. \n Mệnh giá: %1$s \n Mã giao dịch: %2$s</string>
+    <string name="com_appota_error">Có lỗi xảy ra!</string>
+    <string name="com_appota_cant_send_sms">Máy của bạn không thể gửi tin nhắn. Vui lòng sử dụng máy khác</string>
+    <string name="com_appota_pay_on_mobile">Thanh toán ngay</string>
+    <string name="com_appota_pay_on_other">Thanh toán trên máy khác</string>
+
+
+
+    <string name="com_appota_select_bank">Chọn ngân hàng</string>
+
+    <string name="com_appota_bank_confirm_text">sau khi hoàn thành giao dịch trên web, vui lòng ấn nút xác nhận bên dưới.</string>
+    <string name="com_appota_confirm">Xác nhận</string>
+
+    <string name="com_appota_short_url">Nhập link sau vào trình duyệt</string>
+    <string name="com_appota_transaction_success">Giao dịch thành công</string>
+    <string name="com_appota_paypal_confirmation">Để xác nhận giao dịch Paypal của bạn, hệ thống đã gửi 01 email chứa link xác nhận đến email của bạn. Vui lòng xác nhận sau đó ấn nút  \'Xác nhận giao dịch\' bên dưới. Nếu bạn chưa nhận được email, ấn nút \'Gửi lại xác nhận\' để được yêu cầu gửi lại.</string>
+    <string name="com_appota_paypal_verified_transaction">Xác nhận giao dịch</string>
+    <string name="com_appota_paypal_resend_email">Gửi lại email xác nhận</string>
+    <string name="com_appota_email_sent">Email xác nhận đã được gửi đến %s</string>
+    <string name="com_appota_confirm_back">Nếu bạn thoát trước khi xác nhận, giao dịch của bạn sẽ không được hoàn thành. Bạn có chắc muốn thoát?</string>
+    <string name="com_appota_confirm_refund_success">Hoàn trả thành công</string>
+    <string name="com_appota_please_select_bank">Hãy chọn ngân hàng</string>
+
+    <string name="com_appota_select_item">Chọn gói</string>
+    <string name="com_appota_please_select_item">Hãy chọn gói bạn muốn mua</string>
+    <string name="com_appota_title_changelog">Có phiên bản cập nhật mới</string>
+    <string name="com_appota_changelog_close">Bỏ qua</string>
+    <string name="com_appota_current_version">Phiên bản hiện tại: %s</string>
+    <string name="com_appota_new_version">Phiên bản mới: %s</string>
+    <string name="com_appota_update">Cập nhật</string>
+    <string name="com_appota_downloading_update">Đang tải bản cập nhật...</string>
+    <string name="com_appota_update_notice">Có phiên bản mới, ấn vào đây để cập nhật</string>
+    <string name="com_appota_welcome_back_msg">Chào mừng quay trở lại, %s</string>
+
+    <string name="com_appota_input_user">Tên đăng nhập</string>
+    <string name="com_appota_input_password">Mật khẩu</string>
+    <string name="com_appota_re_input_password">Nhập lại mật khẩu</string>
+    <string name="com_appota_input_email">Email (Tuỳ chọn)</string>
+    <string name="com_appota_registering">Đang đăng ký...</string>
+    <string name="com_appota_register_success">Đăng ký thành công</string>
+    <string name="com_appota_login">Đăng nhập</string>
+    <string name="com_appota_quick_login">Đăng nhập nhanh</string>
+    <string name="com_appota_register">Đăng ký</string>
+    <string name="com_appota_google">Google</string>
+    <string name="com_appota_facebook">Facebook</string>
+    <string name="com_appota_loging_in">Đang đăng nhập...</string>
+    <string name="com_appota_login_success">Đăng nhập thành công</string>
+    <string name="com_appota_user_info">Thông tin người dùng</string>
+    <string name="com_appota_logout">Đăng xuất</string>
+    <string name="com_appota_user_id">User ID: %s</string>
+    <string name="com_appota_user_name">Username: %s</string>
+    <string name="com_appota_logout_success">Bạn đã đăng xuất</string>
+    <string name="com_appota_remove_success">Đã xoá</string>
+    <string name="com_appota_choose_google_account">Chọn tài khoản Google</string>
+    <string name="com_appota_choose_payment_method">Chọn phương thức thanh toán</string>
+    <string name="com_appota_choose_amount">Chọn mệnh giá</string>
+    <string name="com_appota_select_user">Chọn tài khoản đăng nhập</string>
+    <string name="com_appota_switch">Chuyển</string>
+    <string name="com_appota_switch_one">Bạn chỉ có 1 tài khoản, không thế chuyển</string>
+    <string name="com_appota_switch_success">Chuyển thành công sang tài khoản %s</string>
+
+    <string name="com_appota_payment_method_sms">Tin nhắn</string>
+    <string name="com_appota_payment_method_sms_premiun">Premium SMS</string>
+    <string name="com_appota_payment_method_card">Thẻ cào</string>
+    <string name="com_appota_payment_method_bank">Ngân hàng</string>
+    <string name="com_appota_payment_method_paypal">PayPal</string>
+    <string name="com_appota_payment_method_mol">MOL</string>
+    <string name="com_appota_payment_method_baokim">Bao kim</string>
+    <string name="com_appota_payment_method_unipin">UniPin</string>
+
+    <string name="com_appota_pay_via_sms">Thanh toán qua SMS</string>
+    <string name="com_appota_pay_via">Thanh toán qua</string>
+    <string name="com_appota_pay_via_card">Thẻ cào</string>
+    <string name="com_appota_pay_via_bank">Ngân hàng</string>
+    <string name="com_appota_pay_via_paypal">PayPal</string>
+    <string name="com_appota_card_info_format">Thẻ %1$d đ -> %2$d</string>
+    <string name="com_appota_bank_amount_format">%1$d đ</string>
+    <string name="com_appota_paypal_amount_format">$ %s</string>
+    <string name="com_appota_paypal_item_name">Thanh toán cho %s</string>
+
+    <string name="com_appota_login_appota">Đăng nhập bằng tài khoản Appota</string>
+    <string name="com_appota_forget_pass">Quên mật khẩu</string>
+    <string name="com_appota_login_other">Đăng nhập bằng tài khoản khác</string>
+    <string name="com_appota_delete">Xoá</string>
+    
+    <string name="com_appota_validator_email">The e-mail address is not in a valid format.</string>
+    <string name="com_appota_validator_empty">Không được để trống.</string>
+    <string name="com_appota_validator_url">The URL entered is incorrect.</string>
+    <string name="com_appota_validator_confirm">The confirm password does not match.</string>
+    <string name="com_appota_validator_alnum">The value has not only alnum characters</string>
+    <string name="com_appota_validator_hex">The value has not only hexadecimal digit characters</string>
+    <string name="com_appota_validator_regexp">The value does not match against pattern.</string>
+
+</resources>

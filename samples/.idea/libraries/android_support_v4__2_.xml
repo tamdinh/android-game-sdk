@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="android-support-v4 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../AppotaGameSDK/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../AppotaGameSDK/libs/google-play-services.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../AppotaGameSDK/libs/khandroid-httpclient-4.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../AppotaGameSDK/libs/PayPalAndroidSDK.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../AppotaGameSDK/libs/volley.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

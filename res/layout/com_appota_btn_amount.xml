@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/com_appota_blue"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <com.appota.gamesdk.widget.AppotaButton
+            android:id="@+id/com_appota_btn_amount"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/com_appota_button_click"
+            android:text="@string/com_appota_pay_on_mobile"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:layout_height="24dp"
+            android:layout_width="24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/com_appota_btn_amount"
+            android:layout_marginRight="20dp"
+            android:id="@+id/com_appota_img_virtual_currency_icon"/>
+
+    </RelativeLayout>
+</LinearLayout>
+

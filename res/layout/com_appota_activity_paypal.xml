@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/com_appota_bg_payment">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/com_appota_layout_top"
+        android:background="@android:color/white">
+
+        <ImageButton
+            android:layout_height="32dp"
+            android:layout_width="32dp"
+            android:src="@drawable/com_appota_ic_back"
+            android:background="@drawable/com_appota_button_click"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/com_appota_btn_back" />
+
+        <LinearLayout
+            android:layout_height="48dp"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/com_appota_btn_back"
+            android:layout_toLeftOf="@+id/com_appota_btn_refresh"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <com.appota.gamesdk.widget.AppotaTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/com_appota_pay_via"
+                android:textColor="@color/com_appota_gray"/>
+
+            <com.appota.gamesdk.widget.AppotaTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/com_appota_pay_via_paypal"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.appota.gamesdk.widget.AppotaTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/com_appota_text_syntax"
+                android:textColor="@color/com_appota_gray"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_height="32dp"
+            android:layout_width="32dp"
+            android:src="@drawable/com_appota_ic_refresh"
+            android:background="@drawable/com_appota_button_click"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/com_appota_btn_refresh"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/com_appota_list_paypal_amount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:dividerHeight="10dp"/>
+
+</LinearLayout>
+
+
+
+
+

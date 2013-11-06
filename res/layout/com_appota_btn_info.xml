@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/com_appota_btn_show_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <com.appota.gamesdk.widget.AppotaTextView
+        android:id="@+id/com_appota_btn_show_details"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="@string/com_appota_info"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/com_appota_triangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/com_appota_btn_show_details"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/com_appota_details"
+        android:src="@drawable/com_appota_ic_down" />
+</RelativeLayout>
+

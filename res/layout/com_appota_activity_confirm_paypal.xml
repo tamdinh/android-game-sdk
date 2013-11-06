@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appota="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/com_appota_bg_payment">
+
+    <com.appota.gamesdk.widget.AppotaTextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"
+        appota:typeface="Roboto-Light.ttf"
+        android:text="@string/com_appota_transaction_success"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/com_appota_darker_line"
+        android:contentDescription="@string/com_appota_bank_confirm_text" />
+
+    <com.appota.gamesdk.widget.AppotaTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/com_appota_paypal_confirmation"
+        android:textColor="@android:color/black"
+        appota:typeface="Roboto-Light.ttf"
+        android:textSize="16sp" />
+
+    <com.appota.gamesdk.widget.AppotaButton
+        android:id="@+id/com_appota_btn_virified"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        appota:typeface="Roboto-Light.ttf"
+        android:background="@drawable/com_appota_btn_green_click"
+        android:text="@string/com_appota_paypal_verified_transaction"
+        android:textColor="@android:color/white"/>
+
+    <com.appota.gamesdk.widget.AppotaButton
+        android:id="@+id/com_appota_btn_resend_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        appota:typeface="Roboto-Light.ttf"
+        android:background="@drawable/com_appota_btn_blue_click"
+        android:text="@string/com_appota_paypal_resend_email"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

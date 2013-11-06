@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.appota.gamesdk.widget.AppotaCheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appota="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    appota:typeface="Roboto-Light.ttf"
+    android:layout_height="48dp"
+    android:ellipsize="marquee" />

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:appota="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.appota.gamesdk.widget.AppotaEditText
+            android:id="@+id/com_appota_edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/com_appota_bg_edit_text"
+            android:hint="@string/com_appota_input_user"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/black"
+            appota:typeface="Roboto-Light.ttf"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <com.appota.gamesdk.widget.AppotaEditText
+            android:id="@+id/com_appota_edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/com_appota_bg_edit_text"
+            android:hint="@string/com_appota_input_password"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/black"
+            appota:typeface="Roboto-Light.ttf"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <com.appota.gamesdk.widget.AppotaEditText
+            android:id="@+id/com_appota_edit_re_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/com_appota_bg_edit_text"
+            android:hint="@string/com_appota_re_input_password"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/black"
+            appota:typeface="Roboto-Light.ttf"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <com.appota.gamesdk.widget.AppotaEditText
+            android:id="@+id/com_appota_edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/com_appota_bg_edit_text"
+            android:hint="@string/com_appota_input_email"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/black"
+            appota:typeface="Roboto-Light.ttf"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <com.appota.gamesdk.widget.AppotaButton
+            android:id="@+id/com_appota_btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/com_appota_btn_blue_click"
+            android:text="@string/com_appota_register"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="20dp"
+            appota:typeface="Roboto-Light.ttf" />
+
+    </LinearLayout>
+</ScrollView>

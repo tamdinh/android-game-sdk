@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AppotaGameSDK/AppotaGameSDK.iml" filepath="$PROJECT_DIR$/../AppotaGameSDK/AppotaGameSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AppotaGameSDKSample.iml" filepath="$PROJECT_DIR$/AppotaGameSDKSample.iml" />
+    </modules>
+  </component>
+</project>
+

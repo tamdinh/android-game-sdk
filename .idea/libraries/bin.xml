@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="bin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Android-ultimate-library/facebook-android-sdk-3.0.2/facebook/bin/facebooksdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Android-ultimate-library/facebook-android-sdk-3.0.2/facebook/bin/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

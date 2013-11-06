@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="com_appota_card_type">
+        <item>Vinaphone</item>
+        <item>Mobifone</item>
+        <item>Viettel</item>
+        <item>FPT Gate</item>
+        <item>MegaCard</item>
+    </array>
+
+    <array name="com_appota_lang">
+        <item>@string/com_appota_lang_en</item>
+        <item>@string/com_appota_lang_vn</item>
+    </array>
+    
+    <array name="com_appota_banks">
+        <item>@string/com_appota_select_bank</item>
+        <item>Techcombank</item>
+        <item>Vietcombank</item>
+        <item>Vietinbank</item>
+        <item>Dong A Bank</item>
+        <item>VIB</item>
+        <item>HD Bank</item>
+        <item>Tien Phong Bank</item>
+        <item>MB Bank</item>
+        <item>Viet A Bank</item>
+        <item>Maritime Bank</item>
+        <item>Exim Bank</item>
+        <item>SHB</item>
+        <item>Sacombank</item>
+        <item>Nam A Bank</item>
+    </array>
+
+</resources>

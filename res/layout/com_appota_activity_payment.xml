@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/com_appota_bg_payment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:layout_height="56dp"
+            android:layout_width="56dp"
+            android:id="@+id/com_appota_img_app_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/com_appota_img_app_icon"
+            android:layout_centerVertical="true">
+
+            <com.appota.gamesdk.widget.AppotaTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/com_appota_app_name"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+            <com.appota.gamesdk.widget.AppotaTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/com_appota_user_name"
+                android:textColor="@color/com_appota_light_blue"
+                android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    <TextView
+        android:layout_height="36dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/com_appota_bg_payment_method"
+        android:text="@string/com_appota_choose_payment_method"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textColor="@color/com_appota_gray"/>
+
+    <ListView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/com_appota_list_payment_method"
+        android:cacheColorHint="@android:color/transparent"/>
+</LinearLayout>
+
