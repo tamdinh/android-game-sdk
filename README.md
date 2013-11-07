@@ -15,7 +15,7 @@ banking, Paypal và Google Play Payment.
 
 ​3. Tích hợp SDK
 
-​3. Chạy SDK samples
+​4. Chạy SDK samples
 
  
 
