@@ -1,52 +1,54 @@
 **Get Started**
 
-Appota Game SDK is the simplest way to integrate user and payment for
-your game in Appota system. This SDK provides solutions for payment
-methods such as: SMS, Card. Internet Banking, Paypal and Google Play
-Payment.
+Appota Payment SDK cho Android là cách đơn giản nhất để tích hợp user
+vaf thanh toán cho ứng dụng của bạn trên hệ thống Appota. SDK này cung
+cấp giải pháp cho các hình thức thanh toán: SMS, thẻ cào, internet
+banking, Paypal và Google Play Payment.
 
-**Steps to integrate SDK:**
+**Các bước tích hợp SDK:**
 
-​1. Import SDK into your project
+​1. Import SDK vào project của bạn
 
-​2. Configure SDK
+​2. Cấu hình SDK
 
-​3. Integrate SDK
+​3. Tích hợp SDK
+
+​3. Chạy SDK samples
 
  
 
-**1. Import SDK into project**
+**1. Import SDK vào project của bạn**
 
-Download Appota Game SDK for Android and import into IDE.
+Download Appota Game SDK cho Android và import vào IDE.
 
-**2. Configure SDK**
+**2. Cấu hình SDK**
 
-**Configuration \<AndroidMainfest.xml\>**
+**Cấu hình file \<AndroidMainfest.xml\>**
 
-- Open file \<AndroidMainfest.xml\> in your project Android.
+- Mở file \<AndroidMainfest.xml\> trong project Android.
 
-- Add following lines to configure permission:
+- Thêm những dòng sau để cấu hình phân quyền:
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-- To use SMS payment interface, add following activity configuration:
+- Để sử dụng giao diện thanh toán SMS, thêm cấu hình activity sau:
 
     <activity android:name="com.appota.gamesdk.SMSPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
 
-- To use Card payment interface, add following activity configuration:
+- Để sử dụng giao diện thanh toán thẻ cào, thêm cấu hình activity sau:
 
     <activity android:name="com.appota.gamesdk.CardPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
 
-- To use Internet Banking payment interface, add following acticity
-configuration:
+- Để sử dụng giao diện thanh toán Internet Banking, thêm cấu hình
+activity sau:
 
     <activity android:name="com.appota.gamesdk.BankPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity android:name="com.appota.gamesdk.ConfirmBankPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
 
-- To use Paypal payment interface, add following activity configuration:
+- Để sử dụng giao diện thanh toán Paypal, thêm cấu hình activity sau:
 
     <activity android:name="com.appota.gamesdk.PaypalPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity android:name="com.appota.gamesdk.ConfirmPaypalPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
@@ -57,16 +59,16 @@ configuration:
     <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
     <activity android:name="com.paypal.android.sdk.payments.PaymentCompletedActivity" />
 
-- To turn off or on Sandbox mode, add following configuration:
+- Để bật hoặc tắt chế độ sandbox, thêm dòng sau:
 
     <meta-data android:name="sandbox" android:value="false" />
 
-**3. Integrate SDK**
+**3. Tích hợp SDK**
 
-Appota Game SDK provides class AppotaConfiguration for all needed
-configuration to integrate Game SDK.
+Appota Game SDK cung cấp class AppotaConfiguration cho tất cả các cấu
+hình cần thiết để tích hợp Game SDK.
 
-**Required configurations:**
+**Các cấu hình bắt buộc:**
 
 - apiKey\
  - sandboxKey\
@@ -75,29 +77,30 @@ configuration to integrate Game SDK.
  - a class inherits from AppotaLoginReceiver to get user info after
 login successfully.
 
-**Optional configurations:**
+**Các cấu hình tùy chọn:**
 
 - useAppotaSDKButton: turn on/off AppotaSDK button\
  - checkUpdate: auto check new updates\
  - virtualCurrencyIcon: show icon of virtual currency on SDK
 
-**4 - Run SDK Samples**
+**4 - Chạy SDK Samples**
 
-Appota Game SDK need a button to show all flow in only one UI.
+Appota Game SDK cần một button để gọi lên giao diện UI được xây dựng
+sẵn.
 
-If you want to use the default Appota SDK button:
+Nếu bạn muốn sử dụng nút bấm mặc định của Appota SDK:
 
     configuration = new AppotaConfiguration();
     configuration.setApiKey(apiKey);
     configuration.setSandboxApiKey(sandboxApiKey);
     AppotaGameSDK.getInstance().init(this, configuration);
 
-If you want to use your custom button, just only call this:
+Nếu bạn muốn sử dụng button của bạn tự thiết kế, gọi hàm sau:
 
     AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(this, configuration);
 
-Call this method on click event handler of your custom button:
+Gọi phương thức này trong onClick handler của nút bấm của bạn:
 
     sdk.makePayment();
 
-You can see the more detail in the attached sample code.
+Xem thêm sample code được kèm theo bộ SDK để thêm chi tiết.
