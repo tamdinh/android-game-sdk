@@ -72,17 +72,17 @@ configuration to integrate Game SDK.
 
 **Required configurations:**
 
-- apiKey\
- - sandboxKey\
- - payment methods\
- - login methods\
+- apiKey
+ - sandboxKey
+ - payment methods
+ - login methods
  - a class inherits from AppotaLoginReceiver to get user info after
 login successfully.
 
 **Optional configurations:**
 
-- useAppotaSDKButton: turn on/off AppotaSDK button\
- - checkUpdate: auto check new updates\
+- useAppotaSDKButton: turn on/off AppotaSDK button
+ - checkUpdate: auto check new updates
  - virtualCurrencyIcon: show icon of virtual currency on SDK
 
 **4 - Run SDK Samples**
