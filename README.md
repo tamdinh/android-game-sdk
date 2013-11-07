@@ -70,17 +70,17 @@ hình cần thiết để tích hợp Game SDK.
 
 **Các cấu hình bắt buộc:**
 
-- apiKey\
- - sandboxKey\
- - payment methods\
- - login methods\
+- apiKey
+ - sandboxKey
+ - payment methods
+ - login methods
  - a class inherits from AppotaLoginReceiver to get user info after
 login successfully.
 
 **Các cấu hình tùy chọn:**
 
-- useAppotaSDKButton: turn on/off AppotaSDK button\
- - checkUpdate: auto check new updates\
+- useAppotaSDKButton: turn on/off AppotaSDK button
+ - checkUpdate: auto check new updates
  - virtualCurrencyIcon: show icon of virtual currency on SDK
 
 **4 - Chạy SDK Samples**
