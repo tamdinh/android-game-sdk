@@ -1,3 +1,5 @@
+Other languages: [Vietnamese](README.md) | [Chinese](README_CN.md)
+
 **Get Started**
 
 Appota Game SDK is the simplest way to integrate user and payment for
