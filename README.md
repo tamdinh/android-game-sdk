@@ -1,3 +1,5 @@
+Other languages: [English]('README_EN.md') | [Chinese]('README_CN.md')
+
 **Get Started**
 
 Appota Payment SDK cho Android là cách đơn giản nhất để tích hợp user
