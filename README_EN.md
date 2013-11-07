@@ -17,7 +17,7 @@ Payment.
 
  4. Run SDK samples
 
-
+ 
 
 **1. Import SDK into project**
 
