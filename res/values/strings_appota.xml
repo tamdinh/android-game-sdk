@@ -67,14 +67,14 @@
     <string name="com_appota_register">Register</string>
     <string name="com_appota_google">Google</string>
     <string name="com_appota_facebook">Facebook</string>
-    <string name="com_appota_loging_in">Loging in...</string>
+    <string name="com_appota_loging_in">Logging in...</string>
     <string name="com_appota_login_success">Successfully logged in</string>
     <string name="com_appota_user_info">User info</string>
     <string name="com_appota_logout">Logout</string>
     <string name="com_appota_user_id">User ID: %s</string>
     <string name="com_appota_user_name">Username: %s</string>
-    <string name="com_appota_logout_success">You had logged out</string>
-    <string name="com_appota_remove_success">Removed</string>
+    <string name="com_appota_logout_success">You have logged out</string>
+    <string name="com_appota_remove_success">Account has been unlinked from this device</string>
     <string name="com_appota_choose_google_account">Choose google account</string>
     <string name="com_appota_choose_payment_method">Choose payment method</string>
     <string name="com_appota_choose_amount">Choose amount</string>
@@ -108,11 +108,30 @@
     <string name="com_appota_delete">Delete</string>
     
     <string name="com_appota_validator_email">The e-mail address is not in a valid format.</string>
-    <string name="com_appota_validator_empty">You must complete this field.</string>
+    <string name="com_appota_validator_empty">This field cannot be empty.</string>
     <string name="com_appota_validator_url">The URL entered is incorrect.</string>
     <string name="com_appota_validator_confirm">The confirm password does not match.</string>
     <string name="com_appota_validator_alnum">The value has not only alnum characters</string>
     <string name="com_appota_validator_hex">The value has not only hexadecimal digit characters</string>
     <string name="com_appota_validator_regexp">The value does not match against pattern.</string>
+    <string name="com_appota_update_user_info">Update account info</string>
+    <string name="com_appota_input_phone">Phone number (Optional)</string>
+    <string name="com_appota_skip">Skip</string>
+    <string name="com_appota_update_user">Update</string>
+    <string name="com_appota_updating">Updating...</string>
+    <string name="com_appota_username_cannot_empty">Username cannot be empty</string>
+    <string name="com_appota_warning">Warning</string>
+    <string name="com_appota_warn_remove_acc">This account is not update info yet, if you remove it, you cannot login with this account later. Please update account info before remove.</string>
+    <string name="com_appota_remove_no_update">Remove anyway</string>
+    <string name="com_appota_update_and_remove"><![CDATA[Update & remove]]></string>
+    <string name="com_appota_cannot_remove_remain_account">You only have one account, cannot remove.</string>
+    <string name="com_appota_user">User</string>
+    <string name="com_appota_account">Account</string>
+    <string name="com_appota_question_change_pass">Change password?</string>
+    <string name="com_appota_warn_logout">This account is linked to this device. Do you want to unlink account from device?</string>
+    <string name="com_appota_unlink_account">Unlink account</string>
+    <string name="com_appota_transaction_log">Transaction Log</string>
+    <string name="com_appota_input_password_new">Enter new password</string>
+    <string name="com_appota_validator_less_than_6">This field must has atleast 6 characters</string>
 
 </resources>

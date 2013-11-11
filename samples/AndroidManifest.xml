@@ -30,7 +30,12 @@
 			</intent-filter>
 		</activity>
         <activity
-            android:name="com.appota.gamesdk.UnusedStub"
+            android:name="com.appota.gamesdk.UserActivity"
+            android:theme="@style/Theme.Appota.GameSDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.appota.gamesdk.UserInfoActivity"
             android:theme="@style/Theme.Appota.GameSDK"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:windowSoftInputMode="adjustPan" />

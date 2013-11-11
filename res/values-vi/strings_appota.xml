@@ -69,12 +69,12 @@
     <string name="com_appota_facebook">Facebook</string>
     <string name="com_appota_loging_in">Đang đăng nhập...</string>
     <string name="com_appota_login_success">Đăng nhập thành công</string>
-    <string name="com_appota_user_info">Thông tin người dùng</string>
+    <string name="com_appota_user_info">Thông tin</string>
     <string name="com_appota_logout">Đăng xuất</string>
     <string name="com_appota_user_id">User ID: %s</string>
     <string name="com_appota_user_name">Username: %s</string>
     <string name="com_appota_logout_success">Bạn đã đăng xuất</string>
-    <string name="com_appota_remove_success">Đã xoá</string>
+    <string name="com_appota_remove_success">Tài khoản đã được gỡ bỏ khỏi thiết bị</string>
     <string name="com_appota_choose_google_account">Chọn tài khoản Google</string>
     <string name="com_appota_choose_payment_method">Chọn phương thức thanh toán</string>
     <string name="com_appota_choose_amount">Chọn mệnh giá</string>
@@ -110,9 +110,28 @@
     <string name="com_appota_validator_email">The e-mail address is not in a valid format.</string>
     <string name="com_appota_validator_empty">Không được để trống.</string>
     <string name="com_appota_validator_url">The URL entered is incorrect.</string>
-    <string name="com_appota_validator_confirm">The confirm password does not match.</string>
+    <string name="com_appota_validator_confirm">Xác nhận mật khẩu không đúng.</string>
     <string name="com_appota_validator_alnum">The value has not only alnum characters</string>
     <string name="com_appota_validator_hex">The value has not only hexadecimal digit characters</string>
     <string name="com_appota_validator_regexp">The value does not match against pattern.</string>
+    <string name="com_appota_update_user_info">Cập nhật thông tin tài khoản</string>
+    <string name="com_appota_input_phone">Số điện thoại (Tuỳ chọn)</string>
+    <string name="com_appota_skip">Bỏ qua</string>
+    <string name="com_appota_update_user">Cập nhật</string>
+    <string name="com_appota_updating">Đang cập nhật...</string>
+    <string name="com_appota_username_cannot_empty">Tên tài khoản không được để trống</string>
+    <string name="com_appota_warning">Cảnh báo</string>
+    <string name="com_appota_warn_remove_acc">Tài khoản này chưa có đầy đủ thông tin, nếu bạn gỡ nó khỏi thiết bị này sẽ không thể truy cập lần sau. Vui bổ sung đầy đủ thông tin trước khi gỡ bỏ.</string>
+    <string name="com_appota_remove_no_update">Gỡ bỏ luôn</string>
+    <string name="com_appota_update_and_remove"><![CDATA[Cập nhật & gỡ bỏ]]></string>
+    <string name="com_appota_cannot_remove_remain_account">Bạn chỉ có 1 tài khoản, không thế gỡ bỏ.</string>
+    <string name="com_appota_user">Tài khoản</string>
+    <string name="com_appota_account">Tài khoản</string>
+    <string name="com_appota_question_change_pass">Đổi mật khẩu?</string>
+    <string name="com_appota_warn_logout">Tài khoản đã được liên kết với thiết bị này. Bạn có muốn gỡ bỏ liên kết khỏi thiết bị sau khi logout?</string>
+    <string name="com_appota_unlink_account">Gỡ bỏ liên kết</string>
+    <string name="com_appota_transaction_log">Lịch sử giao dịch</string>
+    <string name="com_appota_input_password_new">Nhập mật khẩu mới</string>
+    <string name="com_appota_validator_less_than_6">Trường này phải có ít nhất 6 ký tự</string>
 
 </resources>

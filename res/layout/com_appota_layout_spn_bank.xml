@@ -14,7 +14,6 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:entries="@array/com_appota_banks"
         android:background="@drawable/com_appota_bg_spinner"/>
 
 </LinearLayout>

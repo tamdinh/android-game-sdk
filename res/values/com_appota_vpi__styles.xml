@@ -64,6 +64,6 @@
     </style>
 
     <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
-        <item name="android:typeface">monospace</item>
+        <item name="android:typeface">sans</item>
     </style>
 </resources>

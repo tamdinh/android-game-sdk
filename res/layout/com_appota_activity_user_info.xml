@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/com_appota_bg_payment">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:layout_height="64dp"
+            android:layout_width="64dp"
+            android:id="@+id/com_appota_img_app_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:layout_margin="20dp" />
+
+        <com.appota.gamesdk.widget.AppotaTextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/com_appota_img_app_icon"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/com_appota_text_username"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"/>
+
+        <com.appota.gamesdk.widget.AppotaButton
+            android:layout_height="32dp"
+            android:layout_width="100dp"
+            android:id="@+id/com_appota_btn_switch"
+            android:background="@drawable/com_appota_btn_blue_click"
+            android:layout_toRightOf="@+id/com_appota_img_app_icon"
+            android:layout_below="@+id/com_appota_text_username"
+            android:textColor="@android:color/white"
+            android:text="@string/com_appota_switch"/>
+
+        <com.appota.gamesdk.widget.AppotaButton
+            android:layout_height="32dp"
+            android:layout_width="100dp"
+            android:id="@+id/com_appota_btn_logout"
+            android:background="@drawable/com_appota_btn_red_click"
+            android:layout_toRightOf="@+id/com_appota_btn_switch"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/com_appota_text_username"
+            android:textColor="@android:color/white"
+            android:text="@string/com_appota_logout"/>
+    </RelativeLayout>
+
+    <com.appota.gamesdk.widget.vpi.TabPageIndicator
+        android:id="@+id/com_appota_indicator"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/com_appota_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

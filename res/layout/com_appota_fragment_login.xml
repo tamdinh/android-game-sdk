@@ -39,7 +39,7 @@
                 android:background="@drawable/com_appota_darker_line"
                 android:layout_below="@+id/com_appota_edit_username" />
 
-            <com.appota.gamesdk.widget.AppotaEditText
+            <EditText
                 android:id="@+id/com_appota_edit_password"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -109,7 +109,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/com_appota_ic_facebook"
-                android:visibility="gone"/>
+                android:visibility="gone" />
 
             <ImageButton
                 android:id="@+id/com_appota_btn_google"
@@ -118,7 +118,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/com_appota_ic_google"
-                android:visibility="gone"/>
+                android:visibility="gone" />
 
             <ImageButton
                 android:id="@+id/com_appota_btn_twitter"
@@ -139,7 +139,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@drawable/com_appota_button_click"
             android:textColor="@color/com_appota_gray"
-            android:id="@+id/com_appota_btn_forgot"/>
+            android:id="@+id/com_appota_btn_forgot" />
 
     </LinearLayout>
 </ScrollView>

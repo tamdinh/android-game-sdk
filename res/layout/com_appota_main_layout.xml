@@ -10,35 +10,35 @@
         android:orientation="horizontal"
         android:layout_centerInParent="true">
 
-        <LinearLayout
-            android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:layout_gravity="center_vertical"
-            android:orientation="vertical"
-            android:id="@+id/com_appota_btn_logout"
-            android:clickable="true"
-            android:background="@drawable/com_appota_button_click"
-            android:layout_weight="1">
+        <!--<LinearLayout-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:orientation="vertical"-->
+            <!--android:id="@+id/com_appota_btn_logout"-->
+            <!--android:clickable="true"-->
+            <!--android:background="@drawable/com_appota_button_click"-->
+            <!--android:layout_weight="1">-->
 
-            <ImageView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/com_appota_ic_logout" />
+            <!--<ImageView-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/com_appota_ic_logout" />-->
 
-            <com.appota.gamesdk.widget.AppotaTextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="@string/com_appota_logout"
-                android:layout_margin="10dp"
-                android:textSize="20sp"
-                android:textColor="@android:color/white"
-                android:singleLine="true"
-                android:ellipsize="end"
-                android:layout_gravity="center_horizontal" />
+            <!--<com.appota.gamesdk.widget.AppotaTextView-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="@string/com_appota_logout"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:singleLine="true"-->
+                <!--android:ellipsize="end"-->
+                <!--android:layout_gravity="center_horizontal" />-->
 
-        </LinearLayout>
+        <!--</LinearLayout>-->
 
         <LinearLayout
             android:layout_height="wrap_content"
@@ -55,12 +55,12 @@
                 android:layout_width="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/com_appota_ic_switch" />
+                android:background="@drawable/com_appota_ic_user" />
 
             <com.appota.gamesdk.widget.AppotaTextView
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="@string/com_appota_switch"
+                android:text="@string/com_appota_account"
                 android:layout_margin="10dp"
                 android:textSize="20sp"
                 android:textColor="@android:color/white"
@@ -93,9 +93,9 @@
                 android:text="@string/com_appota_payment"
                 android:layout_margin="10dp"
                 android:textSize="20sp"
+                android:textColor="@android:color/white"
                 android:singleLine="true"
                 android:ellipsize="end"
-                android:textColor="@android:color/white"
                 android:layout_gravity="center_horizontal" />
 
         </LinearLayout>
