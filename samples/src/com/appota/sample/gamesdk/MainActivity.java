@@ -11,10 +11,12 @@ import android.widget.Toast;
 import com.appota.gamesdk.commons.AppotaAction;
 import com.appota.gamesdk.core.AppotaConfiguration;
 import com.appota.gamesdk.core.AppotaGameSDK;
-import com.appota.gamesdk.core.AppotaLoginReceiver;
 import com.appota.gamesdk.core.AppotaPayment;
+import com.appota.gamesdk.core.AppotaReceiver;
 import com.appota.gamesdk.core.AppotaUser;
 import com.appota.gamesdk.model.AppotaSession;
+import com.appota.gamesdk.model.CardPaymentResult;
+import com.appota.gamesdk.model.TransactionResult;
 
 public class MainActivity extends Activity {
 
@@ -33,6 +35,9 @@ public class MainActivity extends Activity {
         recevier = new LoginRecevier();
         IntentFilter filter = new IntentFilter();
         filter.addAction(AppotaAction.LOGIN_SUCCESS_ACTION);
+        filter.addAction(AppotaAction.LOGOUT_SUCCESS_ACTION);
+        filter.addAction(AppotaAction.CARD_PAYMENT_SUCCESS_ACTION);
+        filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
         registerReceiver(recevier, filter);
 
         //config for Appota SDK
@@ -73,6 +78,7 @@ public class MainActivity extends Activity {
         configuration.addSupportLoginMethod(AppotaUser.LOGIN_APPOTA);
         //configuration.addSupportLoginMethod(AppotaUser.LOGIN_GOOGLE);
         configuration.addSupportLoginMethod(AppotaUser.LOGIN_APPOTA_FAST);
+        configuration.addSupportLoginMethod(AppotaUser.LOGIN_SOCIALS);
 
         configuration.setState("state");
         configuration.setNoticeUrl("http://filestore9.com/test.php");
@@ -95,13 +101,31 @@ public class MainActivity extends Activity {
     }
 
     //implement login recveive to start verify user on your server
-    private class LoginRecevier extends AppotaLoginReceiver {
+    private class LoginRecevier extends AppotaReceiver {
 
         @Override
         public void onLoginSuccess(AppotaSession user) {
             //do verify login with your server now
             Toast.makeText(MainActivity.this, "do verify login with your server now", Toast.LENGTH_SHORT).show();
         }
+
+		@Override
+		public void onCardPaymentSuccess(CardPaymentResult arg0) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void onLogoutSuccess() {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void onPaymentSuccess(TransactionResult arg0) {
+			// TODO Auto-generated method stub
+			
+		}
     }
 
     @Override

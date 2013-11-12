@@ -130,16 +130,36 @@
 
         </LinearLayout>
 
-        <com.appota.gamesdk.widget.AppotaButton
-            android:layout_height="36dp"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/com_appota_forget_pass"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/com_appota_button_click"
-            android:textColor="@color/com_appota_gray"
-            android:id="@+id/com_appota_btn_forgot" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/com_appota_spn_lang"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:entries="@array/com_appota_lang"/>
+
+            <com.appota.gamesdk.widget.AppotaButton
+                android:layout_height="36dp"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/com_appota_forget_pass"
+                android:background="@drawable/com_appota_button_click"
+                android:textColor="@color/com_appota_gray"
+                android:id="@+id/com_appota_btn_forgot" />
+
+            </RelativeLayout>
+
+
 
     </LinearLayout>
 </ScrollView>
