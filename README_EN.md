@@ -92,8 +92,7 @@ configuration:
 
 **3. Integrate SDK**
 
-Appota Game SDK provides class AppotaConfiguration for all needed
-configuration to integrate Game SDK.
+Appota Game SDK provides class AppotaConfiguration for all needed configuration to integrate Game SDK.
 
 **Required configurations:**
 
@@ -101,14 +100,15 @@ configuration to integrate Game SDK.
  - sandboxKey
  - payment methods
  - login methods
- - a class inherits from AppotaLoginReceiver to get user info after
-login successfully.
+ - a class inherits from AppotaReceiver to get user info after login successfully.
 
-**Optional configurations:**
+**JSON configurations:**
 
- - useAppotaSDKButton: turn on/off AppotaSDK button
- - checkUpdate: auto check new updates
- - virtualCurrencyIcon: show icon of virtual currency on SDK
+Appota Game SDK provides a flexible method to configure various options. You need flow these steps to use this method:
+
+ - Generate a JSON config file
+ - Upload your config file to an accessible host.
+ - Parse it as a param when init Appota Game SDK.
 
 **4 - Run SDK Samples**
 
@@ -125,10 +125,16 @@ If you want to use the default Appota SDK button:
 
 If you want to use your custom button, just only call this:
 
-    AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(this, configuration);
+``` java
+    AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(Context context, 
+        String configUrl, boolean isUseSDKButton, String noticeUrl, 
+        String apiKey, String sandboxApiKey);
+```
 
 Call this method on click event handler of your custom button:
 
+``` java
     sdk.makePayment();
+```
 
 You can see the more detail in the attached sample code.
