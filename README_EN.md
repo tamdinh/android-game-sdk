@@ -130,7 +130,7 @@ Appota Game SDK provides class AppotaConfiguration for all needed configuration 
 
         }
     } 
-```
+``` 
 
 **JSON configurations:**
 
