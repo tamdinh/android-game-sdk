@@ -15,8 +15,6 @@ Payment.
 
 ​3. Integrate SDK
 
- 4. Run SDK samples
-
  
 
 **1. Import SDK into project**
@@ -82,6 +80,14 @@ configuration:
     <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
     <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
     <activity android:name="com.paypal.android.sdk.payments.PaymentCompletedActivity" />
+```
+
+- To use Google Play payment interface, add following activity configuration:
+
+``` xml
+    <activity android:name="com.appota.gamesdk.GooglePaymentActivity" 
+    android:theme="@style/Theme.Appota.GameSDK" 
+    android:configChanges="orientation|keyboardHidden|screenSize"/>
 ```
 
 - To turn off or on Sandbox mode, add following configuration:
