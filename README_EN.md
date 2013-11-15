@@ -108,22 +108,13 @@ Appota Game SDK provides a flexible method to configure various options. You nee
 
  - Generate a JSON config file
  - Upload your config file to an accessible host.
- - Parse it as a param when init Appota Game SDK.
+ - Pass it as a param when init Appota Game SDK.
 
 **4 - Run SDK Samples**
 
 Appota Game SDK need a button to show all flow in only one UI.
 
-If you want to use the default Appota SDK button:
-
-``` java
-    configuration = new AppotaConfiguration();
-    configuration.setApiKey(apiKey);
-    configuration.setSandboxApiKey(sandboxApiKey);
-    AppotaGameSDK.getInstance().init(this, configuration);
-```
-
-If you want to use your custom button, just only call this:
+Call this method in onCreate() function of activity:
 
 ``` java
     AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(Context context, 
@@ -131,10 +122,28 @@ If you want to use your custom button, just only call this:
         String apiKey, String sandboxApiKey);
 ```
 
-Call this method on click event handler of your custom button:
+- configUrl: Link to JSON config file.
+- isUseSDKButton: On/off default sdk buttton
+- noticeUrl: Called when a transaction is finished, if you have already config IPN on developer site, just pass ""
+- apiKey/sandboxApiKey: Provided by Appota for your application.
+
+In the case you don't use default SDK button (isUseSDKButton = false), you can create your custom buttons to
+call separate UI:
+
 
 ``` java
-    sdk.makePayment();
+    sdk.makePayment(); // Show payment UI
+```
+``` java
+    sdk.showUserInfo(); // Show user info UI
+```
+``` java
+    sdk.switchAccount(); // Switch between accounts
+```
+``` java
+    sdk.logout(boolean isShowLoginWhenLoggedOut); // Logout with option show/hide login popup after logged out
 ```
 
 You can see the more detail in the attached sample code.
+
+    AppotaGameSDK.getInstance().setState(String state) // hide this
