@@ -100,7 +100,29 @@ Appota Game SDK provides class AppotaConfiguration for all needed configuration 
  - sandboxKey
  - payment methods
  - login methods
- - a class inherits from AppotaReceiver to get user info after login successfully.
+ - a class inherits from AppotaReceiver to get login/logout/payment event.
+
+``` java
+    private class LoginReceiver extends AppotaReceiver {
+
+        @Override
+        public void onLoginSuccess(AppotaSession user) {
+            //do verify login with your server now
+            Toast.makeText(MainActivity.this, user.getAccessToken(), Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        public void onLogoutSuccess() {
+
+        }
+
+        //payment success callback
+        @Override
+        public void onPaymentSuccess(TransactionResult paymentResult) {
+
+        }
+    } 
+```
 
 **JSON configurations:**
 
@@ -116,7 +138,16 @@ Appota Game SDK need a button to show all flow in only one UI.
 
 Call this method in onCreate() function of activity:
 
+
 ``` java
+    // Register receiver to receive callback when login/logout/payment success
+    MyReceiver receiver = new MyReceiver();
+    IntentFilter filter = new IntentFilter();
+    filter.addAction(AppotaAction.LOGIN_SUCCESS_ACTION);
+    filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
+    registerReceiver(receiver, filter);
+    
+    // Init SDK
     AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(Context context, 
         String configUrl, boolean isUseSDKButton, String noticeUrl, 
         String apiKey, String sandboxApiKey);
@@ -145,5 +176,3 @@ call separate UI:
 ```
 
 You can see the more detail in the attached sample code.
-
-    AppotaGameSDK.getInstance().setState(String state) // hide this
