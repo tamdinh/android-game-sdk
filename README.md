@@ -41,29 +41,42 @@ Download Appota Game SDK cho Android và import vào IDE.
 - Để sử dụng giao diện thanh toán SMS, thêm cấu hình activity sau:
 
 ``` xml
-    <activity android:name="com.appota.gamesdk.SMSPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity android:name="com.appota.gamesdk.SMSPaymentActivity" 
+    android:theme="@style/Theme.Appota.GameSDK" 
+    android:configChanges="orientation|keyboardHidden|screenSize"/>
 ```
 
 - Để sử dụng giao diện thanh toán thẻ cào, thêm cấu hình activity sau:
 
 ``` xml
-    <activity android:name="com.appota.gamesdk.CardPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity android:name="com.appota.gamesdk.CardPaymentActivity" 
+    android:theme="@style/Theme.Appota.GameSDK" 
+    android:configChanges="orientation|keyboardHidden|screenSize"/>
 ```
 
 - Để sử dụng giao diện thanh toán Internet Banking, thêm cấu hình
 activity sau:
 
 ``` xml
-    <activity android:name="com.appota.gamesdk.BankPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <activity android:name="com.appota.gamesdk.ConfirmBankPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity android:name="com.appota.gamesdk.BankPaymentActivity" 
+    android:theme="@style/Theme.Appota.GameSDK" 
+    android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity android:name="com.appota.gamesdk.ConfirmBankPaymentActivity" 
+    android:theme="@style/Theme.Appota.GameSDK" 
+    android:configChanges="orientation|keyboardHidden|screenSize"/>
 ```
 
 - Để sử dụng giao diện thanh toán Paypal, thêm cấu hình activity sau:
 
 ``` xml
-    <activity android:name="com.appota.gamesdk.PaypalPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <activity android:name="com.appota.gamesdk.ConfirmPaypalPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false" />
+    <activity android:name="com.appota.gamesdk.PaypalPaymentActivity" 
+    android:theme="@style/Theme.Appota.GameSDK" 
+    android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity android:name="com.appota.gamesdk.ConfirmPaypalPaymentActivity" 
+    android:theme="@style/Theme.Appota.GameSDK" 
+    android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <service android:name="com.paypal.android.sdk.payments.PayPalService" 
+    android:exported="false" />
     <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
     <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
     <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
