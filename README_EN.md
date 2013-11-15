@@ -15,7 +15,9 @@ Payment.
 
 ​3. Integrate SDK
 
- 
+​4. Run SDK
+
+<hr/>
 
 **1. Import SDK into project**
 
