@@ -138,7 +138,7 @@ Appota Game SDK provides a flexible method to configure various options. You nee
  - Upload your config file to an accessible host.
  - Pass it as a param when init Appota Game SDK.
 
-**4 - Run SDK Samples**
+**4 - Run SDK**
 
 Appota Game SDK need a button to show all flow in only one UI.
 
