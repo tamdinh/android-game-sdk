@@ -36,6 +36,11 @@ Download Appota Game SDK for Android and import into IDE.
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+```
+
+- Add this permission if use Google Play Payment
+
+``` xml
     <uses-permission android:name="com.android.vending.BILLING" />
 ```
 
@@ -112,7 +117,7 @@ Appota Game SDK provides class AppotaConfiguration for all needed configuration 
  - a class inherits from AppotaReceiver to get login/logout/payment event.
 
 ``` java
-    private class LoginReceiver extends AppotaReceiver {
+    private class MyReceiver extends AppotaReceiver {
 
         @Override
         public void onLoginSuccess(AppotaSession user) {
