@@ -23,7 +23,17 @@
         android:textColor="@color/com_appota_gray"
         android:textSize="16sp" />
 
-    <ImageView
+    <com.appota.gamesdk.widget.AppotaTextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/com_appota_virtual_currency_name" />
+
+    <com.android.volley.toolbox.NetworkImageView
         android:layout_height="24dp"
         android:layout_width="24dp"
         android:layout_alignParentRight="true"

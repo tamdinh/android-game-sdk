@@ -17,9 +17,8 @@
             android:background="@drawable/com_appota_btn_sms_left"
             android:gravity="center_vertical|left"
             android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:paddingLeft="10dp"
-            android:textStyle="bold" />
+            android:textSize="16sp"
+            android:paddingLeft="10dp"/>
 
         <com.appota.gamesdk.widget.AppotaTextView
             android:id="@+id/com_appota_text_virtual_amount"
@@ -34,11 +33,21 @@
 
     </LinearLayout>
 
-    <ImageView
+    <com.android.volley.toolbox.NetworkImageView
         android:layout_height="24dp"
         android:layout_width="24dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:id="@+id/com_appota_img_virtual_currency_icon"
+        android:layout_marginRight="30dp"/>
+
+    <com.appota.gamesdk.widget.AppotaTextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:id="@+id/com_appota_virtual_currency_name"
         android:layout_marginRight="30dp"/>
 </RelativeLayout>

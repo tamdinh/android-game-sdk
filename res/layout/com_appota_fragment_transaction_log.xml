@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/com_appota_bg_payment">
+
+    <ImageView
+        android:id="@+id/com_appota_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/com_appota_ic_loading"
+        android:visibility="visible" />
+
+    <com.appota.gamesdk.widget.AppotaButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/com_appota_btn_retry"
+        android:background="@drawable/com_appota_btn_green_click"
+        android:text="@string/com_appota_retry"
+        android:visibility="gone"/>
+
+    <com.appota.gamesdk.widget.AppotaTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/com_appota_text_empty"
+        android:text="@string/com_appota_no_transaction"
+        android:textColor="@color/com_appota_gray"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <com.appota.gamesdk.widget.AppotaLoadmoreListView
+        android:id="@+id/com_appota_list_trans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/com_appota_layout_top"
+        android:cacheColorHint="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+</RelativeLayout>

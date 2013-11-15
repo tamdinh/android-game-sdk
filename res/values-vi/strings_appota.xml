@@ -6,7 +6,7 @@
     <string name="com_appota_lang_ma">Malaysia</string>
     <string name="com_appota_loading">Đang tải...</string>
     <string name="com_appota_retry">Thử lại</string>
-    <string name="com_appota_send_format">Gửi %1$s (%2$d đ/tin)</string>
+    <string name="com_appota_send_format">Gửi %1$s (%2$d %3$s)</string>
     <string name="com_appota_price_format">%1$s VND -> %2$d</string>
     <string name="com_appota_details">Chi tiết</string>
     <string name="com_appota_payment_error">Có lỗi xảy ra, vui lòng thử lại</string>
@@ -88,6 +88,7 @@
     <string name="com_appota_payment_method_card">Thẻ cào</string>
     <string name="com_appota_payment_method_bank">Ngân hàng</string>
     <string name="com_appota_payment_method_paypal">PayPal</string>
+    <string name="com_appota_payment_method_gp">Google Play</string>
     <string name="com_appota_payment_method_mol">MOL</string>
     <string name="com_appota_payment_method_baokim">Bao kim</string>
     <string name="com_appota_payment_method_unipin">UniPin</string>
@@ -97,9 +98,10 @@
     <string name="com_appota_pay_via_card">Thẻ cào</string>
     <string name="com_appota_pay_via_bank">Ngân hàng</string>
     <string name="com_appota_pay_via_paypal">PayPal</string>
-    <string name="com_appota_card_info_format">Thẻ %1$d đ -> %2$d</string>
-    <string name="com_appota_bank_amount_format">%1$d đ</string>
-    <string name="com_appota_paypal_amount_format">$ %s</string>
+    <string name="com_appota_pay_via_gp">Google Play</string>
+    <string name="com_appota_card_info_format">Thẻ %1$d %2$s -> %3$d</string>
+    <string name="com_appota_bank_amount_format">%1$d %2$s</string>
+    <string name="com_appota_paypal_amount_format">%1$s %2$s</string>
     <string name="com_appota_paypal_item_name">Thanh toán cho %s</string>
 
     <string name="com_appota_login_appota">Đăng nhập bằng tài khoản Appota</string>
@@ -133,5 +135,11 @@
     <string name="com_appota_transaction_log">Lịch sử giao dịch</string>
     <string name="com_appota_input_password_new">Nhập mật khẩu mới</string>
     <string name="com_appota_validator_less_than_6">Trường này phải có ít nhất 6 ký tự</string>
+    <string name="com_appota_payment_not_support_country">Hiện tại phương thức thanh toán này chưa hỗ trợ ở đất nước bạn</string>
+    <string name="com_appota_gp_amount_format">%1$s (%2$s)</string>
+    <string name="com_appota_system_maintain">Hệ thống hiện tại đang bảo trì, vui lòng thử lại sau</string>
+    <string name="com_appota_transaction_id">ID: %s</string>
+    <string name="com_appota_no_transaction">Bạn chưa thực hiện giao dịch nào.</string>
+    <string name="com_appota_transaction_amount_format">%1$s %2$s</string>
 
 </resources>

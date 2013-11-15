@@ -67,6 +67,10 @@
             android:name="com.appota.gamesdk.ConfirmPaypalPaymentActivity"
             android:theme="@style/Theme.Appota.GameSDK"
             android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity
+            android:name="com.appota.gamesdk.GooglePaymentActivity"
+            android:theme="@style/Theme.Appota.GameSDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
         <service
             android:name="com.paypal.android.sdk.payments.PayPalService"
             android:exported="false" />

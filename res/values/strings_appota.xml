@@ -6,7 +6,7 @@
     <string name="com_appota_lang_ma">Malaysia</string>
     <string name="com_appota_loading">loading...</string>
     <string name="com_appota_retry">Retry</string>
-    <string name="com_appota_send_format">Send %1$s (%2$d đ/sms)</string>
+    <string name="com_appota_send_format">Send %1$s (%2$d %3$s)</string>
     <string name="com_appota_price_format">%1$s VND -> %2$d</string>
     <string name="com_appota_details">Details</string>
     <string name="com_appota_payment_error">Server response error</string>
@@ -88,6 +88,7 @@
     <string name="com_appota_payment_method_card">Phone card</string>
     <string name="com_appota_payment_method_bank">Internet banking</string>
     <string name="com_appota_payment_method_paypal">PayPal</string>
+    <string name="com_appota_payment_method_gp">Google Play</string>
     <string name="com_appota_payment_method_mol">MOL</string>
     <string name="com_appota_payment_method_baokim">Bao kim</string>
     <string name="com_appota_payment_method_unipin">UniPin</string>
@@ -97,9 +98,10 @@
     <string name="com_appota_pay_via_card">Phone card</string>
     <string name="com_appota_pay_via_bank">Internet banking</string>
     <string name="com_appota_pay_via_paypal">PayPal</string>
-    <string name="com_appota_card_info_format">Card %1$d đ -> %2$d</string>
-    <string name="com_appota_bank_amount_format">%1$d đ</string>
-    <string name="com_appota_paypal_amount_format">$ %s</string>
+    <string name="com_appota_pay_via_gp">Google Play</string>
+    <string name="com_appota_card_info_format">Card %1$d %2$s -> %3$d</string>
+    <string name="com_appota_bank_amount_format">%1$d %2$s</string>
+    <string name="com_appota_paypal_amount_format">%1$s %2$s</string>
     <string name="com_appota_paypal_item_name">Pay for %s</string>
 
     <string name="com_appota_login_appota">Login with Appota account</string>
@@ -133,5 +135,11 @@
     <string name="com_appota_transaction_log">Transaction Log</string>
     <string name="com_appota_input_password_new">Enter new password</string>
     <string name="com_appota_validator_less_than_6">This field must has atleast 6 characters</string>
+    <string name="com_appota_payment_not_support_country">This payment method currently not support in your country</string>
+    <string name="com_appota_gp_amount_format">%1$s (%2$s)</string>
+    <string name="com_appota_system_maintain">System is now maintaining, please try again later</string>
+    <string name="com_appota_transaction_id">ID: %s</string>
+    <string name="com_appota_no_transaction">You have not make any transaction.</string>
+    <string name="com_appota_transaction_amount_format">%1$s %2$s</string>
 
 </resources>
