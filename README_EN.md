@@ -15,7 +15,7 @@ Payment.
 
 ​3. Integrate SDK
 
-​4. Run SDK
+​4. Run SDK samples
 
 <hr/>
 
@@ -36,6 +36,7 @@ Download Appota Game SDK for Android and import into IDE.
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
 ```
 
 - To use SMS payment interface, add following activity configuration:
@@ -140,11 +141,8 @@ Appota Game SDK provides a flexible method to configure various options. You nee
  - Upload your config file to an accessible host.
  - Pass it as a param when init Appota Game SDK.
 
-**4 - Run SDK**
 
-Appota Game SDK need a button to show all flow in only one UI.
-
-Call this method in onCreate() function of activity:
+To init SDK, place this code block in onCreate() method of activity:
 
 
 ``` java
@@ -182,5 +180,7 @@ call separate UI:
 ``` java
     sdk.logout(boolean isShowLoginWhenLoggedOut); // Logout with option show/hide login popup after logged out
 ```
+
+**4 - Run SDK samples**
 
 You can see the more detail in the attached sample code.
