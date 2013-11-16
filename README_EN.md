@@ -191,5 +191,6 @@ call separate UI:
 You can see the more detail in the attached sample code.
 
 <img src="docs/scr1.png"/>
-<img src="docs/scr2.png"/>
+<img src="docs/scr4.png"/>
 <img src="docs/scr3.png"/>
+<img src="docs/scr2.png"/>
