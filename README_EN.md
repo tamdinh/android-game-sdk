@@ -190,6 +190,6 @@ call separate UI:
 
 You can see the more detail in the attached sample code.
 
-<img href="docs/scr1.png"/>
-<img href="docs/scr2.png"/>
-<img href="docs/scr3.png"/>
+<img src="docs/scr1.png"/>
+<img src="docs/scr2.png"/>
+<img src="docs/scr3.png"/>
