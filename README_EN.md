@@ -15,9 +15,9 @@ Payment.
 
 ​3. Integrate SDK
 
- 4. Run SDK samples
+​4. Run SDK samples
 
- 
+<hr/>
 
 **1. Import SDK into project**
 
@@ -31,77 +31,166 @@ Download Appota Game SDK for Android and import into IDE.
 
 - Add following lines to configure permission:
 
+``` xml
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+```
+
+- Add this permission if use Google Play Payment
+
+``` xml
+    <uses-permission android:name="com.android.vending.BILLING" />
+```
 
 - To use SMS payment interface, add following activity configuration:
 
-    <activity android:name="com.appota.gamesdk.SMSPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
+``` xml
+    <activity android:name="com.appota.gamesdk.SMSPaymentActivity" 
+    android:theme="@style/Theme.Appota.GameSDK" 
+    android:configChanges="orientation|keyboardHidden|screenSize"/>
+```
 
 - To use Card payment interface, add following activity configuration:
 
-    <activity android:name="com.appota.gamesdk.CardPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
+``` xml
+    <activity android:name="com.appota.gamesdk.CardPaymentActivity" 
+    android:theme="@style/Theme.Appota.GameSDK" 
+    android:configChanges="orientation|keyboardHidden|screenSize"/>
+```
 
 - To use Internet Banking payment interface, add following acticity
 configuration:
 
-    <activity android:name="com.appota.gamesdk.BankPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <activity android:name="com.appota.gamesdk.ConfirmBankPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
+``` xml
+    <activity android:name="com.appota.gamesdk.BankPaymentActivity" 
+    android:theme="@style/Theme.Appota.GameSDK" 
+    android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity android:name="com.appota.gamesdk.ConfirmBankPaymentActivity" 
+    android:theme="@style/Theme.Appota.GameSDK" 
+    android:configChanges="orientation|keyboardHidden|screenSize"/>
+```
 
 - To use Paypal payment interface, add following activity configuration:
 
-    <activity android:name="com.appota.gamesdk.PaypalPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <activity android:name="com.appota.gamesdk.ConfirmPaypalPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false" />
+``` xml
+    <activity android:name="com.appota.gamesdk.PaypalPaymentActivity" 
+    android:theme="@style/Theme.Appota.GameSDK" 
+    android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity android:name="com.appota.gamesdk.ConfirmPaypalPaymentActivity" 
+    android:theme="@style/Theme.Appota.GameSDK" 
+    android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <service android:name="com.paypal.android.sdk.payments.PayPalService" 
+    android:exported="false" />
     <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
     <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
     <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
     <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
     <activity android:name="com.paypal.android.sdk.payments.PaymentCompletedActivity" />
+```
+
+- To use Google Play payment interface, add following activity configuration:
+
+``` xml
+    <activity android:name="com.appota.gamesdk.GooglePaymentActivity" 
+    android:theme="@style/Theme.Appota.GameSDK" 
+    android:configChanges="orientation|keyboardHidden|screenSize"/>
+```
 
 - To turn off or on Sandbox mode, add following configuration:
 
+``` xml
     <meta-data android:name="sandbox" android:value="false" />
+```
 
 **3. Integrate SDK**
 
-Appota Game SDK provides class AppotaConfiguration for all needed
-configuration to integrate Game SDK.
+Appota Game SDK provides class AppotaConfiguration for all needed configuration to integrate Game SDK.
 
 **Required configurations:**
 
-- apiKey
+ - apiKey
  - sandboxKey
  - payment methods
  - login methods
- - a class inherits from AppotaLoginReceiver to get user info after
-login successfully.
+ - a class inherits from AppotaReceiver to get login/logout/payment event.
 
-**Optional configurations:**
+``` java
+    private class MyReceiver extends AppotaReceiver {
 
-- useAppotaSDKButton: turn on/off AppotaSDK button
- - checkUpdate: auto check new updates
- - virtualCurrencyIcon: show icon of virtual currency on SDK
+        @Override
+        public void onLoginSuccess(AppotaSession user) {
+            //do verify login with your server now
+            Toast.makeText(MainActivity.this, user.getAccessToken(), Toast.LENGTH_SHORT).show();
+        }
 
-**4 - Run SDK Samples**
+        @Override
+        public void onLogoutSuccess() {
 
-Appota Game SDK need a button to show all flow in only one UI.
+        }
 
-If you want to use the default Appota SDK button:
+        //payment success callback
+        @Override
+        public void onPaymentSuccess(TransactionResult paymentResult) {
 
-    configuration = new AppotaConfiguration();
-    configuration.setApiKey(apiKey);
-    configuration.setSandboxApiKey(sandboxApiKey);
-    AppotaGameSDK.getInstance().init(this, configuration);
+        }
+    } 
+``` 
 
-If you want to use your custom button, just only call this:
+**JSON configurations:**
 
-    AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(this, configuration);
+Appota Game SDK provides a flexible method to configure various options. You need flow these steps to use this method:
 
-Call this method on click event handler of your custom button:
+ - Generate a JSON config file
+ - Upload your config file to an accessible host.
+ - Pass it as a param when init Appota Game SDK.
 
-    sdk.makePayment();
+
+To init SDK, place this code block in onCreate() method of activity:
+
+
+``` java
+    // Register receiver to receive callback when login/logout/payment success
+    MyReceiver receiver = new MyReceiver();
+    IntentFilter filter = new IntentFilter();
+    filter.addAction(AppotaAction.LOGIN_SUCCESS_ACTION);
+    filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
+    registerReceiver(receiver, filter);
+    
+    // Init SDK
+    AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(Context context, 
+        String configUrl, boolean isUseSDKButton, String noticeUrl, 
+        String apiKey, String sandboxApiKey);
+```
+
+- configUrl: Link to JSON config file.
+- isUseSDKButton: On/off default sdk buttton
+- noticeUrl: Called when a transaction is finished, if you have already config IPN on developer site, just pass ""
+- apiKey/sandboxApiKey: Provided by Appota for your application.
+
+In the case you don't use default SDK button (isUseSDKButton = false), you can create your custom buttons to
+call separate UI:
+
+
+``` java
+    sdk.makePayment(); // Show payment UI
+```
+``` java
+    sdk.showUserInfo(); // Show user info UI
+```
+``` java
+    sdk.switchAccount(); // Switch between accounts
+```
+``` java
+    sdk.logout(boolean isShowLoginWhenLoggedOut); // Logout with option show/hide login popup after logged out
+```
+
+**4 - Run SDK samples**
 
 You can see the more detail in the attached sample code.
+
+<img src="docs/scr1.png"/>
+<img src="docs/scr4.png"/>
+<img src="docs/scr3.png"/>
+<img src="docs/scr2.png"/>
