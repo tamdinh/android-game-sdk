@@ -4,7 +4,7 @@
     <string name="com_appota_lang_en">English (U.S)</string>
     <string name="com_appota_lang_id">Indonesia</string>
     <string name="com_appota_lang_ma">Malaysia</string>
-    <string name="com_appota_loading">loading...</string>
+    <string name="com_appota_loading">Loading...</string>
     <string name="com_appota_retry">Retry</string>
     <string name="com_appota_send_format">Send %1$s (%2$d %3$s)</string>
     <string name="com_appota_price_format">%1$s VND -> %2$d</string>

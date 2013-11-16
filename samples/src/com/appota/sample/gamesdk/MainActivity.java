@@ -30,6 +30,7 @@ public class MainActivity extends Activity {
         recevier = new LoginReceiver();
         IntentFilter filter = new IntentFilter();
         filter.addAction(AppotaAction.LOGIN_SUCCESS_ACTION);
+        filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
         registerReceiver(recevier, filter);
         //init sdk
         sdk = AppotaGameSDK.getInstance().init(this, "http://filestore9.com/config.php", false, "http://filestore9.com/test.php", apiKey, sandboxApiKey);
