@@ -117,7 +117,7 @@ configuration:
     <activity android:name="com.facebook.LoginActivity"
         android:theme="@android:style/Theme.Translucent.NoTitleBar"
         android:label="@string/app_name" />
-    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="YOUR\_FACEBOOK\_APP_ID" />
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="YOUR_FACEBOOK_APP_ID" />
 ```
 
 **3. Integrate SDK**
