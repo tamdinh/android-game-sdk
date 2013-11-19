@@ -11,7 +11,13 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--use this for google payment-->
     <uses-permission android:name="com.android.vending.BILLING" />
+
+    <!--use this for google login-->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
 
 
     <application
@@ -70,13 +76,12 @@
             android:theme="@style/Theme.Appota.GameSDK"
             android:configChanges="orientation|keyboardHidden|screenSize" />
 
-        <!--<receiver-->
-            <!--android:name=".LoginReceiver"-->
-            <!--android:exported="true">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.appota.login.success"></action>-->
-            <!--</intent-filter>-->
-        <!--</receiver>-->
+        <!--use this for facebook login-->
+        <activity android:name="com.facebook.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id" />
+
         <service
             android:name="com.paypal.android.sdk.payments.PayPalService"
             android:exported="false" />

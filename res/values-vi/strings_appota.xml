@@ -24,6 +24,8 @@
     <string name="com_appota_congrats">Chúc mừng</string>
     <string name="com_appota_pay_success">Giao dịch thành công. \n Mệnh giá: %1$s \n Mã giao dịch: %2$s</string>
     <string name="com_appota_error">Có lỗi xảy ra!</string>
+    <string name="com_appota_refund_error">Ko thể hoàn tác giao dịch</string>
+    <string name="com_appota_refund_success">Giao dịch của bạn đã được hoàn tác</string>
     <string name="com_appota_cant_send_sms">Máy của bạn không thể gửi tin nhắn. Vui lòng sử dụng máy khác</string>
     <string name="com_appota_pay_on_mobile">Thanh toán ngay</string>
     <string name="com_appota_pay_on_other">Thanh toán trên máy khác</string>

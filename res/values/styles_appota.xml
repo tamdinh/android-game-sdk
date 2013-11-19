@@ -32,7 +32,7 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="com_appota_login_button" parent="@style/fb_button">
+    <style name="AppotaFacebookLoginButton" parent="@style/fb_button">
         <item name="android:background">@drawable/com_appota_btn_facebook</item>
     </style>
 

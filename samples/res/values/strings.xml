@@ -3,5 +3,6 @@
 	<string name="app_name">AppotaGameSDKSample</string>
 	<string name="hello_world">Hello world!</string>
 	<string name="menu_settings">Settings</string>
+	<string name="app_id">146975172176581</string>
 
 </resources>

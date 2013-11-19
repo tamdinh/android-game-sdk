@@ -24,6 +24,8 @@
     <string name="com_appota_congrats">Congratulations</string>
     <string name="com_appota_pay_success">Your transaction has complete successfully. \n Amount: %1$s \n Transaction id: %2$s</string>
     <string name="com_appota_error">Error !</string>
+    <string name="com_appota_refund_error">Cannot refund at this time</string>
+    <string name="com_appota_refund_success">Your transaction has been refunded</string>
     <string name="com_appota_cant_send_sms">Your device cannot send SMS. Please use another device</string>
     <string name="com_appota_pay_on_mobile">Pay on this device</string>
     <string name="com_appota_pay_on_other">Pay on other device</string>
