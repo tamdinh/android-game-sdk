@@ -9,6 +9,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <com.appota.gamesdk.widget.AppotaTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:text="@string/com_appota_warning_update_username"/>
+
         <RelativeLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -93,10 +103,10 @@
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
-                android:background="@drawable/com_appota_btn_white_click"
+                android:background="@drawable/com_appota_btn_red_click"
                 android:layout_marginRight="10dp"
                 android:text="@string/com_appota_skip"
-                android:textColor="@android:color/black"/>
+                android:textColor="@android:color/white"/>
 
             <com.appota.gamesdk.widget.AppotaButton
                 android:id="@+id/com_appota_btn_update"
