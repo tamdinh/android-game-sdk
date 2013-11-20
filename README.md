@@ -104,6 +104,22 @@ configuration:
     <meta-data android:name="sandbox" android:value="false" />
 ```
 
+- To login with Google Account, add following configuration:
+
+``` xml
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+```
+
+- To login with Google Account, add following configuration:
+ 
+``` xml
+    <activity android:name="com.facebook.LoginActivity"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:label="@string/app_name" />
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="YOUR_FACEBOOK_APP_ID" />
+```
+
 **3. Integrate SDK**
 
 Appota Game SDK provides class AppotaConfiguration for all needed configuration to integrate Game SDK.
