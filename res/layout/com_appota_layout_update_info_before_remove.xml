@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@drawable/com_appota_bg_payment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/com_appota_bg_payment">
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_height="48dp"
@@ -63,7 +62,7 @@
             <com.appota.gamesdk.widget.AppotaEditText
                 android:id="@+id/com_appota_edit_password"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:layout_alignParentTop="true"
                 android:background="@android:color/transparent"
                 android:hint="@string/com_appota_input_password"
@@ -85,7 +84,7 @@
             <com.appota.gamesdk.widget.AppotaEditText
                 android:id="@+id/com_appota_edit_confirm_pass"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:background="@android:color/transparent"
                 android:hint="@string/com_appota_re_input_password"
                 android:layout_below="@+id/com_appota_edit_password"
@@ -107,7 +106,7 @@
             <com.appota.gamesdk.widget.AppotaEditText
                 android:id="@+id/com_appota_edit_email"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:layout_below="@+id/com_appota_edit_confirm_pass"
                 android:layout_toLeftOf="@+id/com_appota_login_logo"
                 android:background="@android:color/transparent"
@@ -129,7 +128,7 @@
             <com.appota.gamesdk.widget.AppotaEditText
                 android:id="@+id/com_appota_edit_phone"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:layout_below="@+id/com_appota_edit_email"
                 android:layout_toLeftOf="@+id/com_appota_login_logo"
                 android:background="@android:color/transparent"
@@ -156,7 +155,7 @@
             <com.appota.gamesdk.widget.AppotaButton
                 android:id="@+id/com_appota_btn_remove_now"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:layout_weight="1"
                 android:background="@drawable/com_appota_btn_white_click"
                 android:layout_marginRight="10dp"
@@ -168,7 +167,7 @@
             <com.appota.gamesdk.widget.AppotaButton
                 android:id="@+id/com_appota_btn_update_and_remove"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:layout_weight="1"
                 android:singleLine="true"
                 android:ellipsize="end"

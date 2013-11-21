@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/com_appota_bg_payment">
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/com_appota_loading"
@@ -34,7 +33,7 @@
     <com.appota.gamesdk.widget.AppotaLoadmoreListView
         android:id="@+id/com_appota_list_trans"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/com_appota_layout_top"
         android:cacheColorHint="@android:color/transparent"
         android:scrollbars="none"

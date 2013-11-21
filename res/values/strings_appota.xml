@@ -143,5 +143,6 @@
     <string name="com_appota_transaction_id">ID: %s</string>
     <string name="com_appota_no_transaction">You have not make any transaction.</string>
     <string name="com_appota_transaction_amount_format">%1$s %2$s</string>
+    <string name="com_appota_warning_update_username">You should change your username here for later use</string>
 
 </resources>

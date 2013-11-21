@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@drawable/com_appota_bg_payment">
 
     <LinearLayout
@@ -12,7 +13,6 @@
         <RelativeLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:orientation="vertical"
             android:background="@drawable/com_appota_bg_edit_text"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
@@ -21,11 +21,10 @@
             <com.appota.gamesdk.widget.AppotaEditText
                 android:id="@+id/com_appota_edit_username"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:layout_alignParentTop="true"
                 android:background="@android:color/transparent"
                 android:hint="@string/com_appota_input_user"
-                android:paddingLeft="10dp"
                 android:textColor="@android:color/black"
                 android:layout_toLeftOf="@+id/com_appota_login_logo"
                 android:textSize="16sp"
@@ -42,13 +41,12 @@
             <EditText
                 android:id="@+id/com_appota_edit_password"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:layout_below="@+id/com_appota_edit_username"
                 android:layout_toLeftOf="@+id/com_appota_login_logo"
                 android:background="@android:color/transparent"
                 android:hint="@string/com_appota_input_password"
                 android:drawableLeft="@drawable/com_appota_ic_textfield_pass"
-                android:paddingLeft="10dp"
                 android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:singleLine="true"
@@ -56,8 +54,8 @@
                 android:textColorHint="@android:color/darker_gray" />
 
             <ImageView
-                android:layout_height="64dp"
-                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:layout_width="48dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="10dp"
@@ -71,7 +69,7 @@
         <com.appota.gamesdk.widget.AppotaButton
             android:id="@+id/com_appota_btn_login"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="36dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
@@ -85,8 +83,8 @@
         <com.appota.gamesdk.widget.AppotaButton
             android:id="@+id/com_appota_btn_quick_login"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="20dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/com_appota_btn_green_click"
@@ -105,7 +103,7 @@
             <ImageButton
                 android:id="@+id/com_appota_btn_facebook"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/com_appota_ic_facebook"
@@ -114,7 +112,7 @@
             <ImageButton
                 android:id="@+id/com_appota_btn_google"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/com_appota_ic_google"
@@ -123,7 +121,7 @@
             <ImageButton
                 android:id="@+id/com_appota_btn_twitter"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:layout_weight="1"
                 android:visibility="gone"
                 android:background="@drawable/com_appota_ic_twitter" />
@@ -133,7 +131,6 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="20dp">
 
             <Spinner
@@ -143,23 +140,22 @@
                 android:layout_marginLeft="10dp"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:entries="@array/com_appota_lang"/>
+                android:entries="@array/com_appota_lang" />
 
             <com.appota.gamesdk.widget.AppotaButton
-                android:layout_height="36dp"
+                android:layout_height="24dp"
                 android:layout_width="wrap_content"
-                android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
+                android:textSize="14sp"
                 android:text="@string/com_appota_forget_pass"
                 android:background="@drawable/com_appota_button_click"
                 android:textColor="@color/com_appota_gray"
                 android:id="@+id/com_appota_btn_forgot" />
 
-            </RelativeLayout>
-
-
+        </RelativeLayout>
 
     </LinearLayout>
 </ScrollView>

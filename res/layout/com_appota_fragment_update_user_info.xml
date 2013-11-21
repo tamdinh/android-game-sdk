@@ -31,7 +31,7 @@
             <com.appota.gamesdk.widget.AppotaEditText
                 android:id="@+id/com_appota_edit_username"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:layout_alignParentTop="true"
                 android:background="@android:color/transparent"
                 android:hint="@string/com_appota_input_user"
@@ -52,7 +52,7 @@
             <com.appota.gamesdk.widget.AppotaEditText
                 android:id="@+id/com_appota_edit_email"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:layout_below="@+id/com_appota_edit_username"
                 android:layout_toLeftOf="@+id/com_appota_login_logo"
                 android:background="@android:color/transparent"
@@ -74,7 +74,7 @@
             <com.appota.gamesdk.widget.AppotaEditText
                 android:id="@+id/com_appota_edit_phone"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:layout_below="@+id/com_appota_edit_email"
                 android:layout_toLeftOf="@+id/com_appota_login_logo"
                 android:background="@android:color/transparent"
@@ -101,7 +101,7 @@
             <com.appota.gamesdk.widget.AppotaButton
                 android:id="@+id/com_appota_btn_skip"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:layout_weight="1"
                 android:background="@drawable/com_appota_btn_red_click"
                 android:layout_marginRight="10dp"
@@ -111,7 +111,7 @@
             <com.appota.gamesdk.widget.AppotaButton
                 android:id="@+id/com_appota_btn_update"
                 android:layout_width="0dp"
-                android:layout_height="48dp"
+                android:layout_height="36dp"
                 android:layout_weight="1"
                 android:background="@drawable/com_appota_btn_green_click"
                 android:text="@string/com_appota_update_user"

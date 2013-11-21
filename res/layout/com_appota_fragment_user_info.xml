@@ -1,114 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
 
-        <!--<com.appota.gamesdk.widget.AppotaEditText-->
-            <!--android:id="@+id/com_appota_edit_username"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="48dp"-->
-            <!--android:layout_marginLeft="20dp"-->
-            <!--android:layout_marginRight="20dp"-->
-            <!--android:layout_marginTop="10dp"-->
-            <!--android:background="@drawable/com_appota_bg_edit_text"-->
-            <!--android:hint="@string/com_appota_input_user"-->
-            <!--android:paddingLeft="10dp"-->
-            <!--android:textColor="@android:color/black"-->
-            <!--android:textSize="16sp"-->
-            <!--android:drawableLeft="@drawable/com_appota_ic_textfield_uname"-->
-            <!--android:singleLine="true"-->
-            <!--android:textColorHint="@android:color/darker_gray" />-->
-
-        <com.appota.gamesdk.widget.AppotaEditText
-            android:id="@+id/com_appota_edit_email"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/com_appota_bg_edit_text"
-            android:hint="@string/com_appota_input_email"
-            android:paddingLeft="10dp"
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:drawableLeft="@drawable/com_appota_ic_textfield_email"
-            android:singleLine="true"
-            android:textColorHint="@android:color/darker_gray" />
+            android:layout_height="wrap_content">
 
-        <com.appota.gamesdk.widget.AppotaEditText
-            android:id="@+id/com_appota_edit_phone"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/com_appota_bg_edit_text"
-            android:hint="@string/com_appota_input_phone"
-            android:paddingLeft="10dp"
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:drawableLeft="@drawable/com_appota_ic_textfield_phone"
-            android:singleLine="true"
-            android:textColorHint="@android:color/darker_gray" />
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/com_appota_bg_edit_text"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
 
-        <com.appota.gamesdk.widget.AppotaTextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="@string/com_appota_question_change_pass"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
+                <com.appota.gamesdk.widget.AppotaEditText
+                    android:id="@+id/com_appota_edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/com_appota_input_email"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/com_appota_ic_textfield_email"
+                    android:singleLine="true"
+                    android:textColorHint="@android:color/darker_gray" />
 
-        <EditText
-            android:id="@+id/com_appota_edit_password"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp"
-            android:inputType="textPassword"
-            android:background="@drawable/com_appota_bg_edit_text"
-            android:hint="@string/com_appota_input_password_new"
-            android:paddingLeft="10dp"
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:drawableLeft="@drawable/com_appota_ic_textfield_pass"
-            android:singleLine="true"
-            android:textColorHint="@android:color/darker_gray" />
+                <ImageView
+                    android:layout_height="0.5dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/com_appota_darker_line"
+                    android:layout_below="@+id/com_appota_edit_email" />
 
-        <EditText
-            android:id="@+id/com_appota_edit_confirm_pass"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp"
-            android:inputType="textPassword"
-            android:background="@drawable/com_appota_bg_edit_text"
-            android:hint="@string/com_appota_re_input_password"
-            android:paddingLeft="10dp"
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:drawableLeft="@drawable/com_appota_ic_textfield_pass"
-            android:singleLine="true"
-            android:textColorHint="@android:color/darker_gray" />
+                <com.appota.gamesdk.widget.AppotaEditText
+                    android:id="@+id/com_appota_edit_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/com_appota_input_phone"
+                    android:layout_below="@+id/com_appota_edit_email"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/com_appota_ic_textfield_phone"
+                    android:singleLine="true"
+                    android:textColorHint="@android:color/darker_gray" />
+            </RelativeLayout>
 
-        <com.appota.gamesdk.widget.AppotaButton
-            android:id="@+id/com_appota_btn_update"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/com_appota_btn_green_click"
-            android:text="@string/com_appota_update_user"
-            android:textColor="@android:color/white" />
 
-    </LinearLayout>
-</ScrollView>
+            <com.appota.gamesdk.widget.AppotaTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/com_appota_question_change_pass"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/com_appota_bg_edit_text"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/com_appota_edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:inputType="textPassword"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/com_appota_input_password_new"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/com_appota_ic_textfield_pass"
+                    android:singleLine="true"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <ImageView
+                    android:layout_height="0.5dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/com_appota_darker_line"
+                    android:layout_below="@+id/com_appota_edit_password" />
+
+                <EditText
+                    android:id="@+id/com_appota_edit_confirm_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_below="@+id/com_appota_edit_password"
+                    android:inputType="textPassword"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/com_appota_re_input_password"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/com_appota_ic_textfield_pass"
+                    android:singleLine="true"
+                    android:textColorHint="@android:color/darker_gray" />
+
+            </RelativeLayout>
+
+
+            <com.appota.gamesdk.widget.AppotaButton
+                android:id="@+id/com_appota_btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/com_appota_btn_green_click"
+                android:text="@string/com_appota_update_user"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

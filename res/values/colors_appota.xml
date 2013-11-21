@@ -28,4 +28,5 @@
     <color name="com_appota_alert">#CC0000</color>
     <color name="com_appota_confirm">#FF8800</color>
     <color name="com_appota_info">#669900</color>
+    <color name="com_appota_game_currency_color">#FFFF00</color>
 </resources>

@@ -10,42 +10,46 @@
         android:layout_width="match_parent">
 
         <ImageView
-            android:layout_height="64dp"
-            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:layout_width="48dp"
             android:id="@+id/com_appota_img_app_icon"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:scaleType="fitCenter"
-            android:layout_margin="20dp" />
+            android:layout_margin="10dp" />
 
         <com.appota.gamesdk.widget.AppotaTextView
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_toRightOf="@+id/com_appota_img_app_icon"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="10dp"
             android:id="@+id/com_appota_text_username"
             android:textColor="@android:color/black"
             android:layout_marginBottom="5dp"
-            android:textSize="18sp"/>
+            android:textSize="16sp"/>
 
-        <com.appota.gamesdk.widget.AppotaButton
-            android:layout_height="32dp"
-            android:layout_width="100dp"
+        <com.appota.gamesdk.widget.AppotaTextView
+            android:layout_height="24dp"
+            android:layout_width="wrap_content"
             android:id="@+id/com_appota_btn_switch"
             android:background="@drawable/com_appota_btn_blue_click"
             android:layout_toRightOf="@+id/com_appota_img_app_icon"
             android:layout_below="@+id/com_appota_text_username"
             android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:layout_marginBottom="5dp"
             android:text="@string/com_appota_switch"/>
 
-        <com.appota.gamesdk.widget.AppotaButton
-            android:layout_height="32dp"
-            android:layout_width="100dp"
+        <com.appota.gamesdk.widget.AppotaTextView
+            android:layout_height="24dp"
+            android:layout_width="wrap_content"
             android:id="@+id/com_appota_btn_logout"
             android:background="@drawable/com_appota_btn_red_click"
             android:layout_toRightOf="@+id/com_appota_btn_switch"
             android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"
             android:layout_below="@+id/com_appota_text_username"
             android:textColor="@android:color/white"
             android:text="@string/com_appota_logout"/>
