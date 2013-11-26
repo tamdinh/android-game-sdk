@@ -9,7 +9,7 @@
     <string name="com_appota_send_format">Gửi %1$s (%2$d %3$s)</string>
     <string name="com_appota_price_format">%1$s VND -> %2$d</string>
     <string name="com_appota_details">Chi tiết</string>
-    <string name="com_appota_payment_error">Có lỗi xảy ra, vui lòng thử lại</string>
+    <string name="com_appota_payment_error">Hiện tại máy chủ đang bảo trì, vui lòng thử lại</string>
     <string name="com_appota_wait_payment">Đang chờ kết quả giao dịch...</string>
     <string name="com_appota_sms_syntax">Cấu trúc SMS</string>
     <string name="com_appota_info">Thông tin</string>
@@ -144,5 +144,6 @@
     <string name="com_appota_no_transaction">Bạn chưa thực hiện giao dịch nào.</string>
     <string name="com_appota_transaction_amount_format">%1$s %2$s</string>
     <string name="com_appota_warning_update_username">Bạn nên thay đổi tên đăng nhập để có thể sử dụng lần sau</string>
+    <string name="com_appota_error_message">Hiện tại không thể kết nối đến máy chủ, vui lòng thử lại sau. [%d]</string>
 
 </resources>

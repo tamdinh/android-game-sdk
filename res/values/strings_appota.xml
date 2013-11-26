@@ -9,7 +9,7 @@
     <string name="com_appota_send_format">Send %1$s (%2$d %3$s)</string>
     <string name="com_appota_price_format">%1$s VND -> %2$d</string>
     <string name="com_appota_details">Details</string>
-    <string name="com_appota_payment_error">Server response error</string>
+    <string name="com_appota_payment_error">Currently server is maintaining, please try again later</string>
     <string name="com_appota_wait_payment">Waiting for payment result...</string>
     <string name="com_appota_sms_syntax">SMS Syntax</string>
     <string name="com_appota_info">More Info  </string>
@@ -144,5 +144,5 @@
     <string name="com_appota_no_transaction">You have not make any transaction.</string>
     <string name="com_appota_transaction_amount_format">%1$s %2$s</string>
     <string name="com_appota_warning_update_username">You should change your username here for later use</string>
-
+    <string name="com_appota_error_message">Currently cannot connect to server, please try again. [%d]</string>
 </resources>
