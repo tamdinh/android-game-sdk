@@ -9,6 +9,17 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
 
+        <com.appota.gamesdk.widget.AppotaTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/com_appota_gray"
+            android:id="@+id/com_appota_text_version"
+            android:textSize="13sp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp" />
+
         <ImageView
             android:layout_height="56dp"
             android:layout_width="56dp"
@@ -16,13 +27,14 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:scaleType="fitCenter"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp" />
 
         <LinearLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_toRightOf="@+id/com_appota_img_app_icon"
+            android:layout_toLeftOf="@+id/com_appota_text_version"
             android:layout_centerVertical="true">
 
             <com.appota.gamesdk.widget.AppotaTextView
@@ -30,17 +42,22 @@
                 android:layout_width="wrap_content"
                 android:id="@+id/com_appota_app_name"
                 android:textColor="@android:color/black"
-                android:textSize="18sp"/>
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="18sp" />
+
             <com.appota.gamesdk.widget.AppotaTextView
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:id="@+id/com_appota_user_name"
+                android:singleLine="true"
+                android:ellipsize="end"
                 android:textColor="@color/com_appota_light_blue"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
 
-            </LinearLayout>
+        </LinearLayout>
 
-        </RelativeLayout>
+    </RelativeLayout>
 
     <TextView
         android:layout_height="36dp"
@@ -51,12 +68,14 @@
         android:paddingLeft="10dp"
         android:textAllCaps="true"
         android:textSize="14sp"
-        android:textColor="@color/com_appota_gray"/>
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/com_appota_gray" />
 
     <ListView
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:id="@+id/com_appota_list_payment_method"
-        android:cacheColorHint="@android:color/transparent"/>
+        android:cacheColorHint="@android:color/transparent" />
 </LinearLayout>
 
