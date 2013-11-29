@@ -5,4 +5,7 @@
 	<string name="menu_settings">Settings</string>
     <string name="app_id">146975172176581</string>
 
+    <string name="twitter_consumer_key">6vxD5uyLYgG1ZxdJmZfA</string>
+    <string name="twitter_consumer_secret">LZNvBuW41Z6A6vXpfYi0knGUYb8jd5fDRY7gfFDaXA</string>
+
 </resources>

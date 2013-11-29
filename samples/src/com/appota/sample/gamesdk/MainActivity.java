@@ -33,12 +33,13 @@ public class MainActivity extends Activity {
         filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
         registerReceiver(recevier, filter);
         //init sdk
-        sdk = AppotaGameSDK.getInstance().init(this, "http://filestore9.com/config.php", false, "http://filestore9.com/test.php", apiKey, sandboxApiKey);
-        sdk.setState("state1");
+        sdk = AppotaGameSDK.getInstance().init(this, "http://filestore9.com/config.php", true, "http://filestore9.com/test.php", apiKey, sandboxApiKey);
+        sdk.setShowButtonType(AppotaGameSDK.SHOW_ACCOUNT_BUTTON);
     }
 
     //if not use AppotaSDKButton, call makePayment() in an event. for example, on button click
     public void makePayment(View v){
+        sdk.setState("state1");
         sdk.makePayment();
     }
 
@@ -78,6 +79,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        sdk.finish();
         unregisterReceiver(recevier);
     }
 

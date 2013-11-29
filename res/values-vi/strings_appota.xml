@@ -145,5 +145,6 @@
     <string name="com_appota_transaction_amount_format">%1$s %2$s</string>
     <string name="com_appota_warning_update_username">Bạn nên thay đổi tên đăng nhập để có thể sử dụng lần sau</string>
     <string name="com_appota_error_message">Hiện tại không thể kết nối đến máy chủ, vui lòng thử lại sau. [%d]</string>
+    <string name="com_appota_confirm_remove_account">Bạn muốn xoá tài khoản này?</string>
 
 </resources>
