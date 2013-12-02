@@ -20,6 +20,11 @@ public class LoginReceiver extends AppotaReceiver {
     }
 
     @Override
+    public void onSwitchAccountSuccess(AppotaSession user) {
+
+    }
+
+    @Override
     public void onPaymentSuccess(TransactionResult paymentResult) {
 
     }

@@ -31,10 +31,14 @@ public class MainActivity extends Activity {
         IntentFilter filter = new IntentFilter();
         filter.addAction(AppotaAction.LOGIN_SUCCESS_ACTION);
         filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
+        filter.addAction(AppotaAction.SWITCH_SUCCESS_ACTION);
         registerReceiver(recevier, filter);
         //init sdk
         sdk = AppotaGameSDK.getInstance().init(this, "http://filestore9.com/config.php", true, "http://filestore9.com/test.php", apiKey, sandboxApiKey);
         sdk.setShowButtonType(AppotaGameSDK.SHOW_ACCOUNT_BUTTON);
+
+        //show or hide switch, logout button
+        sdk.setShowUserFuntionButtons(false);
     }
 
     //if not use AppotaSDKButton, call makePayment() in an event. for example, on button click
@@ -61,12 +65,17 @@ public class MainActivity extends Activity {
         @Override
         public void onLoginSuccess(AppotaSession user) {
             //do verify login with your server now
-            Toast.makeText(MainActivity.this, user.getAccessToken(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Just for login testing. Username = " + user.getUsername(), Toast.LENGTH_SHORT).show();
         }
 
         @Override
         public void onLogoutSuccess() {
 
+        }
+
+        @Override
+        public void onSwitchAccountSuccess(AppotaSession user) {
+            Toast.makeText(MainActivity.this, "Just for switch testing. Username = " + user.getUsername(), Toast.LENGTH_SHORT).show();
         }
 
         //payment success callback
