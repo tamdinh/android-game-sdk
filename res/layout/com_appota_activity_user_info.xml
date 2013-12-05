@@ -24,7 +24,7 @@
             android:layout_toRightOf="@+id/com_appota_img_app_icon"
             android:layout_alignParentTop="true"
             android:id="@+id/com_appota_text_username"
-            android:textColor="@android:color/black"
+            android:textColor="@color/com_appota_blue"
             android:layout_marginBottom="5dp"
             android:textSize="16sp"/>
 
