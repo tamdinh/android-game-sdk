@@ -136,7 +136,7 @@
     <string name="com_appota_unlink_account">Unlink account</string>
     <string name="com_appota_transaction_log">Transaction Log</string>
     <string name="com_appota_input_password_new">Enter new password</string>
-    <string name="com_appota_validator_less_than_6">This field must has atleast 6 characters</string>
+    <string name="com_appota_validator_less_than_6">This field must has atleast 4 characters</string>
     <string name="com_appota_payment_not_support_country">This payment method currently not support in your country</string>
     <string name="com_appota_gp_amount_format">%1$s (%2$s)</string>
     <string name="com_appota_system_maintain">System is now maintaining, please try again later</string>

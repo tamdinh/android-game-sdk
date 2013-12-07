@@ -136,7 +136,7 @@
     <string name="com_appota_unlink_account">Gỡ bỏ liên kết</string>
     <string name="com_appota_transaction_log">Lịch sử giao dịch</string>
     <string name="com_appota_input_password_new">Nhập mật khẩu mới</string>
-    <string name="com_appota_validator_less_than_6">Trường này phải có ít nhất 6 ký tự</string>
+    <string name="com_appota_validator_less_than_6">Trường này phải có ít nhất 4 ký tự</string>
     <string name="com_appota_payment_not_support_country">Hiện tại phương thức thanh toán này chưa hỗ trợ ở đất nước bạn</string>
     <string name="com_appota_gp_amount_format">%1$s (%2$s)</string>
     <string name="com_appota_system_maintain">Hệ thống hiện tại đang bảo trì, vui lòng thử lại sau</string>
