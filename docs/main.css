@@ -1,0 +1,49 @@
+﻿body {
+	font-family: Tahoma, sans-serif;
+	font-size: small;
+}
+
+table.gridtable {
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+p.method_detail {
+	background-color: #CCCCFF;
+	padding: 5px;
+}
+p.code {
+	padding: 10px;
+	background-color: #CCCCFF;
+	font-family:"Courier New", Courier, monospace;
+}
+
+.language {
+	float:right;
+	margin-top: -70px;
+	margin-right: 20px;
+	line-height: 30px;
+}
+
+.flag {
+	border: 1px solid white;
+}
+
+.flag .active {
+	border: 1px solid red;
+}
