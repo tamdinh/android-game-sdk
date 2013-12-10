@@ -41,24 +41,33 @@ Download Appota Game SDK cho Android và import vào IDE.
 - Để sử dụng giao diện thanh toán Google Play, thêm cấu hình permission
 sau:
 
+``` xml
     <uses-permission android:name="com.android.vending.BILLING" />
+```
 
 - Để sử dụng giao diện thanh toán SMS, thêm cấu hình activity sau:
 
+``` xml
     <activity android:name="com.appota.gamesdk.SMSPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
+```
 
 - Để sử dụng giao diện thanh toán thẻ cào, thêm cấu hình activity sau:
 
+``` xml
     <activity android:name="com.appota.gamesdk.CardPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
+```
 
 - Để sử dụng giao diện thanh toán Internet Banking, thêm cấu hình
 activity sau:
 
+``` xml
     <activity android:name="com.appota.gamesdk.BankPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity android:name="com.appota.gamesdk.ConfirmBankPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
+```
 
 - Để sử dụng giao diện thanh toán Paypal, thêm cấu hình activity sau:
 
+``` xml
     <activity android:name="com.appota.gamesdk.PaypalPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
     <activity android:name="com.appota.gamesdk.ConfirmPaypalPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
     <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false" />
@@ -67,30 +76,38 @@ activity sau:
     <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
     <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
     <activity android:name="com.paypal.android.sdk.payments.PaymentCompletedActivity" />
+```
 
 - Để sử dụng giao diện thanh toán Google Play Payment, thêm cấu hình
 activity sau:
 
+``` xml
     <activity android:name="com.appota.gamesdk.GooglePaymentActivity" android:theme="@style/Theme.Appota.GameSDK" 
     android:configChanges="orientation|keyboardHidden|screenSize"/>
+```
 
 - Để bật hoặc tắt chế độ sandbox, thêm dòng sau:
 
+``` xml
     <meta-data android:name="sandbox" android:value="false" />
+```
 
 - Để sử dụng tài khoản Google để đăng nhập, thêm cấu hình permission
 sau:
 
+``` xml
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+```
 
 - Để sử dụng tài khoản Facebook để đăng nhập, thêm cấu hình permission
 sau:
 
+``` xml
     <activity android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"
     android:label="@string/app_name" />
     <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="YOUR_FACEBOOK_APP_ID" />
-
+```
  
 
 **3. Tích hợp SDK**
@@ -100,13 +117,13 @@ hình cần thiết để tích hợp Game SDK.
 
 **Các cấu hình bắt buộc:**
 
-- apiKey\
- - sandboxKey\
- - payment methods\
- - login methods\
- - a class inherits from AppotaReceiver to get login/logout/payment
-successfully.
+ - apiKey
+ - sandboxKey
+ - payment methods
+ - login methods
+ - a class inherits from AppotaReceiver to get login/logout/payment successfully.
 
+``` java
      private class MyReceiver extends AppotaReceiver {
 
         @Override
@@ -126,21 +143,21 @@ successfully.
 
         }
     } 
+```
 
 **Cấu hình JSON:**
 
-Appota Game SDK cung cấp một phương thức cấu hình tiện lợi với nhiều tùy
-chọn cho nhà phát triển. Bạn cần thực hiện các bước sau để sử dụng
-phương thức này:
+Appota Game SDK cung cấp một phương thức cấu hình tiện lợi với nhiều tùy chọn cho nhà phát triển. Bạn cần thực hiện các bước sau để sử dụng phương thức này:
 
-- Sử dụng công cụ JSON Generator để tạo ra file JSON chứa các cấu hình.\
- - Upload file cấu hình JSON lên một host có thể truy cập được.\
+ - Sử dụng công cụ JSON Generator để tạo ra file JSON chứa các cấu hình.
+ - Upload file cấu hình JSON lên một host có thể truy cập được.
  - Khởi tạo Appota Game SDK với URL tới file cấu hình.
 
 **Khởi tạo SDK**
 
 Đặt đoạn mã sau trong hàm onCreate() của activity:
 
+``` java
      // Register receiver to receive callback when login/logout/payment success
     MyReceiver receiver = new MyReceiver();
     IntentFilter filter = new IntentFilter();
@@ -152,24 +169,26 @@ phương thức này:
     AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(Context context, 
     String configUrl, boolean isUseSDKButton, String noticeUrl, 
     String apiKey, String sandboxApiKey);
+```
 
-- configUrl: Link tới file cấu hình JSON.\
- - isUseSDKButton: Tắt/bật nút SDK.\
- - noticeUrl: Được gọi khi một transaction kết thúc, nếu bạn đã cấu hình
-IPN trên trang developer có thể truyền giá trị "" vào.\
- - apiKey/sandboxApiKey: Các key được cung cấp bởi Appota cho ứng dụng
-của bạn.
+ - configUrl: Link tới file cấu hình JSON.
+ - isUseSDKButton: Tắt/bật nút SDK.
+ - noticeUrl: Được gọi khi một transaction kết thúc, nếu bạn đã cấu hình IPN trên trang developer có thể truyền giá trị "" vào.
+ - apiKey/sandboxApiKey: Các key được cung cấp bởi Appota cho ứng dụng của bạn.
 
-Trong trường hợp không muốn sử dụng nút nổi mặc định của SDK
-(isUseSDKButton = false), bạn có thể tạo nút bấm tùy chọn và gọi các
-giao diện riêng biệt:
+Trong trường hợp không muốn sử dụng nút nổi mặc định của SDK (isUseSDKButton = false), bạn có thể tạo nút bấm tùy chọn và gọi các giao diện riêng biệt:
 
+``` java
     sdk.makePayment(); // Show payment UI
+```
 
+``` java
     sdk.showUserInfo(); // Show user info UI
+```
 
+``` java
     sdk.switchAccount(); // Switch between accounts
-
+```
  
 
 **4 - Chạy SDK Samples**
