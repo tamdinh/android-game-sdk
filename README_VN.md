@@ -38,8 +38,7 @@ Download Appota Game SDK cho Android và import vào IDE.
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
-- Để sử dụng giao diện thanh toán Google Play, thêm cấu hình permission
-sau:
+- Để sử dụng giao diện thanh toán Google Play, thêm cấu hình permission sau:
 
 ``` xml
     <uses-permission android:name="com.android.vending.BILLING" />
@@ -57,8 +56,7 @@ sau:
     <activity android:name="com.appota.gamesdk.CardPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
 ```
 
-- Để sử dụng giao diện thanh toán Internet Banking, thêm cấu hình
-activity sau:
+- Để sử dụng giao diện thanh toán Internet Banking, thêm cấu hình activity sau:
 
 ``` xml
     <activity android:name="com.appota.gamesdk.BankPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
@@ -78,8 +76,7 @@ activity sau:
     <activity android:name="com.paypal.android.sdk.payments.PaymentCompletedActivity" />
 ```
 
-- Để sử dụng giao diện thanh toán Google Play Payment, thêm cấu hình
-activity sau:
+- Để sử dụng giao diện thanh toán Google Play Payment, thêm cấu hình activity sau:
 
 ``` xml
     <activity android:name="com.appota.gamesdk.GooglePaymentActivity" android:theme="@style/Theme.Appota.GameSDK" 
@@ -92,16 +89,14 @@ activity sau:
     <meta-data android:name="sandbox" android:value="false" />
 ```
 
-- Để sử dụng tài khoản Google để đăng nhập, thêm cấu hình permission
-sau:
+- Để sử dụng tài khoản Google để đăng nhập, thêm cấu hình permission sau:
 
 ``` xml
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
 ```
 
-- Để sử dụng tài khoản Facebook để đăng nhập, thêm cấu hình permission
-sau:
+- Để sử dụng tài khoản Facebook để đăng nhập, thêm cấu hình permission sau:
 
 ``` xml
     <activity android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"
@@ -112,8 +107,7 @@ sau:
 
 **3. Tích hợp SDK**
 
-Appota Game SDK cung cấp class AppotaConfiguration cho tất cả các cấu
-hình cần thiết để tích hợp Game SDK.
+Appota Game SDK cung cấp class AppotaConfiguration cho tất cả các cấu hình cần thiết để tích hợp Game SDK.
 
 **Các cấu hình bắt buộc:**
 
@@ -149,7 +143,7 @@ hình cần thiết để tích hợp Game SDK.
 
 Appota Game SDK cung cấp một phương thức cấu hình tiện lợi với nhiều tùy chọn cho nhà phát triển. Bạn cần thực hiện các bước sau để sử dụng phương thức này:
 
- - Sử dụng công cụ JSON Generator để tạo ra file JSON chứa các cấu hình.
+ - Sử dụng công cụ JSON Generator để tạo ra file JSON chứa các cấu hình (https://developer.appota.com/sdktool.php).
  - Upload file cấu hình JSON lên một host có thể truy cập được.
  - Khởi tạo Appota Game SDK với URL tới file cấu hình.
 
