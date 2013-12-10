@@ -31,10 +31,12 @@ Download Appota Game SDK cho Android và import vào IDE.
 
 - Thêm những dòng sau để cấu hình phân quyền:
 
+``` xml
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+```
 
 - Để sử dụng giao diện thanh toán Google Play, thêm cấu hình permission
 sau:
