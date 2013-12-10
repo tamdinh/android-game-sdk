@@ -2,10 +2,7 @@ Other languages: [English](README_EN.md) | [Chinese](README_CN.md)
 
 **Get Started**
 
-Appota Game SDK cho Android là cách đơn giản nhất để tích hợp user vaf
-thanh toán cho ứng dụng của bạn trên hệ thống Appota. SDK này cung cấp
-giải pháp cho các hình thức thanh toán: SMS, thẻ cào, internet banking,
-Paypal và Google Play Payment.
+Appota Game SDK cho Android là cách đơn giản nhất để tích hợp user và thanh toán cho ứng dụng của bạn trên hệ thống Appota. SDK này cung cấp giải pháp cho các hình thức thanh toán: SMS, thẻ cào, internet banking, Paypal và Google Play Payment.
 
 **Các bước tích hợp SDK:**
 
