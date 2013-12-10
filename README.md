@@ -158,7 +158,7 @@ Appota Game SDK provides class AppotaConfiguration for all needed configuration 
 
 Appota Game SDK provides a flexible method to configure various options. You need flow these steps to use this method:
 
- - Generate a JSON config file
+ - Generate a JSON config file by using JSON Generator (https://developer.appota.com/sdktool.php).
  - Upload your config file to an accessible host.
  - Pass it as a param when init Appota Game SDK.
 
