@@ -111,7 +111,7 @@ configuration:
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
 ```
 
-- To login with Google Account, add following configuration:
+- To login with Facebook Account, add following configuration:
  
 ``` xml
     <activity android:name="com.facebook.LoginActivity"
