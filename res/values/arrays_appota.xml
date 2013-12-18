@@ -19,6 +19,7 @@
         <item>Techcombank</item>
         <item>Vietcombank</item>
         <item>Vietinbank</item>
+        <item>BIDV</item>
         <item>Dong A Bank</item>
         <item>VIB</item>
         <item>HD Bank</item>
@@ -30,6 +31,9 @@
         <item>SHB</item>
         <item>Sacombank</item>
         <item>Nam A Bank</item>
+        <item>Ocean Bank</item>
+        <item>SeABank</item>
+        <item>Bac A Bank</item>
     </array>
 
 </resources>
