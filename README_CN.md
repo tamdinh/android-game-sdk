@@ -107,7 +107,7 @@ Android Appota Game SDK 是给你应用集成Appota 用户和支付系统的最�
 
 **3. 集成 SDK**
 
-Appota Game SDK cung cấp class AppotaConfiguration cho tất cả các cấu hình cần thiết để tích hợp Game SDK. Appota Game SDK给所有需要的配置提供AppotaConfiguration class以便集成Game SDK
+Appota Game SDK给所有需要的配置提供AppotaConfiguration class以便集成Game SDK
 
 **各个必须的配置:**
 
