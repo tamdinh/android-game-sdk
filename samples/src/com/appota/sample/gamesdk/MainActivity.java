@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
         sdk.setShowButtonType(AppotaGameSDK.SHOW_ACCOUNT_BUTTON);
 
         //show or hide switch, logout button
-        sdk.setShowUserFuntionButtons(false);
+        //sdk.setShowUserFuntionButtons(false);
     }
 
     //if not use AppotaSDKButton, call makePayment() in an event. for example, on button click
