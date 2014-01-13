@@ -11,7 +11,7 @@ public class LoginReceiver extends AppotaReceiver {
     @Override
     public void onLoginSuccess(AppotaSession user) {
         //Toast.makeText(MainActivity.this, "do verify login with your server now", Toast.LENGTH_SHORT).show();
-        System.err.println(user.getUsername() + " " + user.getUserId());
+        //System.err.println(user.getUsername() + " " + user.getUserId());
     }
 
     @Override

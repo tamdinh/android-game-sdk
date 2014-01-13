@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
     private String apiKey = "123593a5f93eac19e26baee408f9928f0525e6a18";
     private String sandboxApiKey = "";
     private AppotaGameSDK sdk;
-    private LoginReceiver recevier;
+    private LoginReceiver receiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,18 +27,26 @@ public class MainActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         //register receiver for receive payment and login event
-        recevier = new LoginReceiver();
+        receiver = new LoginReceiver();
         IntentFilter filter = new IntentFilter();
         filter.addAction(AppotaAction.LOGIN_SUCCESS_ACTION);
         filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
         filter.addAction(AppotaAction.SWITCH_SUCCESS_ACTION);
-        registerReceiver(recevier, filter);
+        registerReceiver(receiver, filter);
         //init sdk
-        sdk = AppotaGameSDK.getInstance().init(this, "http://filestore9.com/config.php", true, "http://filestore9.com/test.php", apiKey, sandboxApiKey);
+        sdk = AppotaGameSDK.getInstance().init(this, "http://developer.appota.com/config.php", true, "http://filestore9.com/test.php", apiKey, sandboxApiKey);
+
+        //optional
         sdk.setShowButtonType(AppotaGameSDK.SHOW_ACCOUNT_BUTTON);
 
         //show or hide switch, logout button
-        //sdk.setShowUserFuntionButtons(false);
+        sdk.setShowUserFunctionButtons(false);
+        //we use 2 way to login facebook: native and web
+        //sdk.setLoginFacebookType(AppotaGameSDK.LOGIN_FACEBOOK_NATIVE);
+        sdk.setLoginFacebookType(AppotaGameSDK.LOGIN_FACEBOOK_WEB);
+        //if login type is web, you have to set clientId and clientSecret (clientId, clientSecret get from http://developer.appota.com)
+        sdk.setClientKey("8d638e1421080c68d9dfb9bc89c56adf0525e6957");
+        sdk.setClientSecret("90b830d7b5fe5b771baf4e2e41fb0b9d0525e6957");
     }
 
     //if not use AppotaSDKButton, call makePayment() in an event. for example, on button click
@@ -65,7 +73,7 @@ public class MainActivity extends Activity {
         @Override
         public void onLoginSuccess(AppotaSession user) {
             //do verify login with your server now
-            Toast.makeText(MainActivity.this, "Just for login testing. Username = " + user.getUsername(), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(MainActivity.this, "Just for login testing. Username = " + user.getUsername(), Toast.LENGTH_SHORT).show();
         }
 
         @Override
@@ -75,7 +83,7 @@ public class MainActivity extends Activity {
 
         @Override
         public void onSwitchAccountSuccess(AppotaSession user) {
-            Toast.makeText(MainActivity.this, "Just for switch testing. Username = " + user.getUsername(), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(MainActivity.this, "Just for switch testing. Username = " + user.getUsername(), Toast.LENGTH_SHORT).show();
         }
 
         //payment success callback
@@ -89,7 +97,7 @@ public class MainActivity extends Activity {
     protected void onDestroy() {
         super.onDestroy();
         sdk.finish();
-        unregisterReceiver(recevier);
+        unregisterReceiver(receiver);
     }
 
 }
