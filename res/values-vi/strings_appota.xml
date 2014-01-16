@@ -126,6 +126,7 @@
     <string name="com_appota_username_cannot_empty">Tên tài khoản không được để trống</string>
     <string name="com_appota_warning">Cảnh báo</string>
     <string name="com_appota_warn_remove_acc">Tài khoản này chưa có đầy đủ thông tin, nếu bạn gỡ nó khỏi thiết bị này sẽ không thể truy cập lần sau. Vui bổ sung đầy đủ thông tin trước khi gỡ bỏ.</string>
+    <string name="com_appota_warn_update_acc">Tài khoản này chưa có đầy đủ thông tin, vui lòng cập nhật thông tin để tránh trường hợp bị mất tài khoản.</string>
     <string name="com_appota_remove_no_update">Gỡ bỏ luôn</string>
     <string name="com_appota_update_and_remove"><![CDATA[Cập nhật & gỡ bỏ]]></string>
     <string name="com_appota_cannot_remove_remain_account">Bạn chỉ có 1 tài khoản, không thế gỡ bỏ.</string>

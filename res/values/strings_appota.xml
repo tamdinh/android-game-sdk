@@ -126,6 +126,7 @@
     <string name="com_appota_username_cannot_empty">Username cannot be empty</string>
     <string name="com_appota_warning">Warning</string>
     <string name="com_appota_warn_remove_acc">This account is not update info yet, if you remove it, you cannot login with this account later. Please update account info before remove.</string>
+    <string name="com_appota_warn_update_acc">This account is not update info yet, please update account info now.</string>
     <string name="com_appota_remove_no_update">Remove anyway</string>
     <string name="com_appota_update_and_remove"><![CDATA[Update & remove]]></string>
     <string name="com_appota_cannot_remove_remain_account">You only have one account, cannot remove.</string>
